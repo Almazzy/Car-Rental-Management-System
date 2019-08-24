@@ -1,1 +1,0 @@
-﻿UPDATE Samochody SET stan = 'wydany' where Id_Samochodu = '1'
