@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A39C6A94-DD57-458A-8083-C5C6BD4B0AEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>carRental</RootNamespace>
+    <AssemblyName>carRental</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Azure.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Azure.Common.NetFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Azure.Management.Sql, Version=0.9.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Azure.Plugins.Diagnostics.dll, Version=33.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Azure.ResourceManager, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.VS.Azure, Version=16.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Diagnostics, Version=2.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=4.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Web, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsAzureTelemetryEvents, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="other\login_window.xaml.cs">
+      <DependentUpon>login_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="other\logout_window.xaml.cs">
+      <DependentUpon>logout_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_cars\add_new_car_window.xaml.cs">
+      <DependentUpon>add_new_car_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_cars\cars_window.xaml.cs">
+      <DependentUpon>cars_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_cars\change_status_window.xaml.cs">
+      <DependentUpon>change_status_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_cars\delete_car_window.xaml.cs">
+      <DependentUpon>delete_car_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_customers\add_new_user_window.xaml.cs">
+      <DependentUpon>add_new_user_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_customers\customers_window.xaml.cs">
+      <DependentUpon>customers_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="klasy\connection.cs" />
+    <Compile Include="win_employees\add_emp_window.xaml.cs">
+      <DependentUpon>add_emp_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_employees\del_emp_window.xaml.cs">
+      <DependentUpon>del_emp_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_employees\employees_window.xaml.cs">
+      <DependentUpon>employees_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_finance\finance_window.xaml.cs">
+      <DependentUpon>finance_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_overview\new_p_window.xaml.cs">
+      <DependentUpon>new_p_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_overview\new_service_window.xaml.cs">
+      <DependentUpon>new_service_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_overview\new_ub_window.xaml.cs">
+      <DependentUpon>new_ub_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_overview\new_uw_window.xaml.cs">
+      <DependentUpon>new_uw_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_overview\overview_window.xaml.cs">
+      <DependentUpon>overview_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_rentals\add_new_res_window.xaml.cs">
+      <DependentUpon>add_new_res_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_rentals\add_new_window.xaml.cs">
+      <DependentUpon>add_new_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_rentals\end_window.xaml.cs">
+      <DependentUpon>end_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_rentals\mod_window.xaml.cs">
+      <DependentUpon>mod_window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="win_rentals\rentals_window.xaml.cs">
+      <DependentUpon>rentals_window.xaml</DependentUpon>
+    </Compile>
+    <Page Include="other\login_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="other\logout_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_cars\add_new_car_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_cars\cars_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_cars\change_status_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_cars\delete_car_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_customers\add_new_user_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_customers\customers_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="win_employees\add_emp_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_employees\del_emp_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_employees\employees_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_finance\finance_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_overview\new_p_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_overview\new_service_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_overview\new_ub_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_overview\new_uw_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_overview\overview_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_rentals\add_new_res_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_rentals\add_new_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_rentals\end_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_rentals\mod_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_rentals\rentals_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\file2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\editdocument.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\car.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cal1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cal2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cal3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cal2b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cal1b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cal3b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\f1.png" />
+    <Resource Include="pic\f2.png" />
+    <Resource Include="pic\f3.png" />
+    <Resource Include="pic\f4.png" />
+    <Resource Include="pic\f5.png" />
+    <Resource Include="pic\f6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\f7.png" />
+    <Resource Include="pic\f8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dashboard_window\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\1pb.png" />
+    <Resource Include="pic\1pc.png" />
+    <Resource Include="pic\ap.png" />
+    <Resource Include="pic\wpb.png" />
+    <Resource Include="pic\wpc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cars\cabriob.png" />
+    <Resource Include="pic\cars\cabrios.png" />
+    <Resource Include="pic\cars\hatchbackb.png" />
+    <Resource Include="pic\cars\hatchbacks.png" />
+    <Resource Include="pic\cars\kombib.png" />
+    <Resource Include="pic\cars\kombis.png" />
+    <Resource Include="pic\cars\sedanb.png" />
+    <Resource Include="pic\cars\sedans.png" />
+    <Resource Include="pic\cars\sportb.png" />
+    <Resource Include="pic\cars\sports.png" />
+    <Resource Include="pic\cars\suvb.png" />
+    <Resource Include="pic\cars\suvs.png" />
+    <Resource Include="pic\cars\vanb.png" />
+    <Resource Include="pic\cars\vans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cars\manwcarb.png" />
+    <Resource Include="pic\cars\manwcars.png" />
+    <Resource Include="pic\cars\resb.png" />
+    <Resource Include="pic\cars\ress.png" />
+    <Resource Include="pic\cars\serb.png" />
+    <Resource Include="pic\cars\twob.png" />
+    <Resource Include="pic\cars\twos.png" />
+    <Resource Include="pic\cars\wolb.png" />
+    <Resource Include="pic\cars\wols.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\cars\sers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\filepp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\um1b.png" />
+    <Resource Include="pic\um1s.png" />
+    <Resource Include="pic\um2b.png" />
+    <Resource Include="pic\um2s.png" />
+    <Resource Include="pic\um3b.png" />
+    <Resource Include="pic\um3s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\ico1.png" />
+    <Resource Include="pic\ico2.png" />
+    <Resource Include="pic\ico3.png" />
+    <Resource Include="pic\ico4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\unpb.png" />
+    <Resource Include="pic\unps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\road.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\changeb.png" />
+    <Resource Include="pic\offb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\addb.png" />
+    <Resource Include="pic\signb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\add_o_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\car_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\car-rent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\logout.png" />
+    <Resource Include="pic\reload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\emp\hb.png" />
+    <Resource Include="pic\emp\hs.png" />
+    <Resource Include="pic\emp\pzbb.png" />
+    <Resource Include="pic\emp\pzss.png" />
+    <Resource Include="pic\emp\sb.png" />
+    <Resource Include="pic\emp\ss.png" />
+    <Resource Include="pic\emp\wb.png" />
+    <Resource Include="pic\emp\ws.png" />
+    <Resource Include="pic\emp\zbb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\emp\zss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\emp\delp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic\emp\addp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,156 @@
+﻿<Window x:Class="carRental.win_finance.finance_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carRental.win_finance"
+        mc:Ignorable="d"
+        Title=" e-carRent - finanse i raporty." WindowStyle="ToolWindow" Background="#FFEAE7DC"
+        ResizeMode="CanResizeWithGrip" MaxWidth="1925" MaxHeight="1050" Width="1925" Height="1050" WindowStartupLocation="CenterOwner" Left="-5" Top="-5">
+    <Grid Background="#FFE8E8E8">
+        <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="100" Margin="0,920,0,0" Stroke="Black" VerticalAlignment="Top" Width="1917"/>
+        <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="162" Stroke="LightGray" VerticalAlignment="Top" Width="1917" Opacity="0.5"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="957,-2,0,0" VerticalAlignment="Top" Width="202" Background="#FFBF7F7F"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="957,87,0,0" VerticalAlignment="Top" Width="202" Background="#FFBF7F7F"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="912,43,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5" Background="#FFBF7F7F">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="1113,43,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.5,0.5" Background="#FFBF7F7F">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Button x:Name="btn_rentals" Content="   Wynajmy" HorizontalAlignment="Left" Margin="38,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FF9ABF7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_rentals_Click" />
+        <Button x:Name="btn_customers" Content="   Klienci" HorizontalAlignment="Left" Margin="268,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFF0D264" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_customers_Click" />
+        <Button x:Name="btn_cars" Content="      Samochody" HorizontalAlignment="Left" Margin="500,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFCB99C5" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_cars_Click" />
+        <Button x:Name="btn_employees" Content="      Pracownicy" HorizontalAlignment="Left" Margin="1192,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FF7FB1BF" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_employees_Click" />
+        <Image Source="/carRental;component/pic/emp/hb.png"  HorizontalAlignment="Left" Height="40" Margin="1203,74,0,0" VerticalAlignment="Top" Width="38"/>
+        <Image Source="/carRental;component/pic/key.png" HorizontalAlignment="Left" Height="40" Margin="48,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="276,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/car.png" HorizontalAlignment="Left" Height="40" Margin="508,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Button x:Name="btn_overview" Content="     Polisy &amp;&#xA;    Przęglądy" HorizontalAlignment="Left" Margin="730,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFA69FC7" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_overview_Click" />
+        <Button x:Name="btn_finance" Content="   Finanse" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click" />
+        <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="40" Margin="740,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="1032,57,0,0" VerticalAlignment="Top" Width="72" Background="White"/>
+        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
+            <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
+        </Button>
+        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click">
+            <Image Source="/carRental;component/pic/logout.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
+        </Button>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="1760,30,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.033"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Height="485" Margin="14,365,0,0" VerticalAlignment="Top" Width="1278">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="nr faktury" Binding="{Binding nr_faktury}" Width="131"/>
+                <DataGridTextColumn Header="nr zlecenia" Binding="{Binding nr_zlecenia}" Width="151"/>
+                <DataGridTextColumn Header="najemca" Binding="{Binding najemca}" Width="141"/>
+                <DataGridTextColumn Header="data wystawienia" Binding="{Binding data_wystawienia}" Width="151"/>
+                <DataGridTextColumn Header="sposób płatności" Binding="{Binding sposob_platnosci}" Width="151"/>
+                <DataGridTextColumn Header="termin platności" Binding="{Binding termin_platnosci}" Width="151"/>
+                <DataGridTextColumn Header="usluga" Binding="{Binding usluga}" Width="181"/>
+                <DataGridTextColumn Header="suma dni" Binding="{Binding suma_dni}" Width="100"/>
+                <DataGridTextColumn Header="osoba wystawiająca" Binding="{Binding imie_nazwisko}" Width="131"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="682" Margin="1316,212,0,0" Stroke="LightGray" VerticalAlignment="Top" Width="578"/>
+        <Label Content="podgląd dokumentu:" HorizontalAlignment="Left" Margin="1316,178,0,0" VerticalAlignment="Top" FontSize="14" Width="154"/>
+        <Separator HorizontalAlignment="Left" Height="12" Margin="10,316,0,0" VerticalAlignment="Top" Width="1294"/>
+        <Separator HorizontalAlignment="Left" Height="12" Margin="950,533,0,0" VerticalAlignment="Top" Width="710" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="89.998"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Button x:Name="btn_download_doc" Content="pobierz DOC" HorizontalAlignment="Left" Margin="995,867,0,0" VerticalAlignment="Top" Width="297" Height="27" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_download_doc_Click" />
+        <Button x:Name="btn_download_pdf" Content="pobierz PDF" HorizontalAlignment="Left" Margin="670,867,0,0" VerticalAlignment="Top" Width="300" Height="27" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_download_pdf_Click" />
+        <Button x:Name="btn_gen_invoice" Content="wygeneruj fakturę" HorizontalAlignment="Left" Margin="339,867,0,0" VerticalAlignment="Top" Width="300" Height="27" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_gen_invoice_Click" />
+        <TextBox x:Name="txt_no_f" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="27" Margin="14,867,0,0" TextWrapping="Wrap" Text="wpisz numer faktury" VerticalAlignment="Top" Width="300" FontSize="16" Foreground="#FF707070"/>
+        <TextBox x:Name="txt_s3" HorizontalAlignment="Left" Height="23" Margin="297,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141"/>
+        <TextBox x:Name="txt_s4" HorizontalAlignment="Left" Height="23" Margin="438,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="txt_s1" HorizontalAlignment="Left" Height="23" Margin="14,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134"/>
+        <TextBox x:Name="txt_s2" HorizontalAlignment="Left" Height="23" Margin="146,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="txt_s5" HorizontalAlignment="Left" Height="23" Margin="589,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="txt_s6" HorizontalAlignment="Left" Height="23" Margin="740,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="151"/>
+        <TextBox x:Name="txt_s7" HorizontalAlignment="Left" Height="23" Margin="891,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181"/>
+        <TextBox x:Name="txt_s8" HorizontalAlignment="Left" Height="23" Margin="1072,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txt_s9" HorizontalAlignment="Left" Height="23" Margin="1172,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_all_invoices" Content="&#xA;&#xA;&#xA;          wszystkie faktury" HorizontalAlignment="Left" Margin="64,193,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_invoice_Click" />
+        <Image x:Name="im1" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="74,211,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="lbl_all_invoices" Content="" HorizontalAlignment="Left" Margin="254,178,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn_c_invoices" Content="&#xA;&#xA;          faktury klientów&#xD;&#xA;          indywidualnych" HorizontalAlignment="Left" Margin="515,193,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_c_invoices_Click" />
+        <Image x:Name="im2" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="525,211,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="lbl_c_invoices" Content="" HorizontalAlignment="Left" Margin="705,178,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn_b_invoices" Content="&#xA;&#xA;          faktury klientów&#xD;&#xA;          biznesowych" HorizontalAlignment="Left" Margin="966,193,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_b_invoices_Click" />
+        <Image x:Name="im3" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="976,211,0,0" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="lbl_b_invoices" Content="" HorizontalAlignment="Left" Margin="1156,178,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Label x:Name="l1" Content="Wynajmujący:" HorizontalAlignment="Left" Margin="1336,221,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l7" Content="Najemca:" HorizontalAlignment="Left" Margin="1806,219,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l2" Content="DreamCar" HorizontalAlignment="Left" Margin="1336,240,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l3" Content="Katowice, 01-101" HorizontalAlignment="Left" Margin="1336,253,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l4" Content="ul. Wymyślona 7" HorizontalAlignment="Left" Margin="1336,266,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l5" Content="NIP: 44-60-2115-420" HorizontalAlignment="Left" Margin="1336,280,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l6" Content="F A K T U R A  nr." HorizontalAlignment="Left" Margin="1421,313,0,0" VerticalAlignment="Top" Width="190" FontSize="22" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l11" Content="data wystawienia:" HorizontalAlignment="Left" Margin="1341,440,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l9" Content="data rozpoczęcia wynajmu:" HorizontalAlignment="Left" Margin="1341,378,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l10" Content="data zakończenia wynajmu:" HorizontalAlignment="Left" Margin="1341,409,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l12" Content="sposób płatności:" HorizontalAlignment="Left" Margin="1341,481,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l13" Content="termin płatności:" HorizontalAlignment="Left" Margin="1341,512,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l14" Content="------------------------------------------------------------------------------------------------------------" HorizontalAlignment="Left" Margin="1341,543,0,0" VerticalAlignment="Top" Width="528"/>
+        <Label x:Name="l18" Content="-----------------------------------------------------------------------------------------------------------" HorizontalAlignment="Left" Margin="1341,678,0,0" VerticalAlignment="Top" Width="528" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l15" Content="USŁUGA:" HorizontalAlignment="Left" Margin="1341,574,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l16" Content="ilość dni:" HorizontalAlignment="Left" Margin="1341,647,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l17" Content="stawka dobowa brutto:" HorizontalAlignment="Left" Margin="1603,647,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l20" Content="suma netto:" HorizontalAlignment="Left" Margin="1509,709,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l21" Content="suma brutto:" HorizontalAlignment="Left" Margin="1695,709,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l19" Content="podatek VAT:" HorizontalAlignment="Left" Margin="1341,709,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l24" Content="podpis osoby wystawiającej" HorizontalAlignment="Left" Margin="1334,853,0,0" VerticalAlignment="Top" Width="169" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l25" Content="podpis najemcy" HorizontalAlignment="Left" Margin="1778,853,0,0" VerticalAlignment="Top" Width="102" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="lbl_f_no" Content="-" HorizontalAlignment="Left" Margin="1611,313,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei" Height="39" Width="212" FontSize="20"/>
+        <Label x:Name="l8" Content="------------------------------------------------------------------------------------------------------------" HorizontalAlignment="Left" Margin="1341,347,0,0" VerticalAlignment="Top" Width="528"/>
+        <Label x:Name="l23" Content="........................................................" HorizontalAlignment="Left" Margin="1336,837,0,0" VerticalAlignment="Top" Width="168" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="l22" Content="..................................." HorizontalAlignment="Left" Margin="1778,837,0,0" VerticalAlignment="Top" Width="102" FontFamily="Microsoft JhengHei"/>
+        <Label x:Name="lbl_n_name" HorizontalContentAlignment="Right" Content="-" HorizontalAlignment="Left" Margin="1741,238,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei" Width="128"/>
+        <Label x:Name="lbl_n_no" HorizontalContentAlignment="Right" Content="-" HorizontalAlignment="Left" Margin="1741,280,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei" Width="128"/>
+        <TextBlock x:Name="textblock_n_address"  HorizontalAlignment="Left" Margin="1758,256,0,0" TextAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Height="34" Width="106" FontFamily="Microsoft JhengHei" Text="-"/>
+        <Label x:Name="lbl_start_date" Content="-" HorizontalAlignment="Left" Margin="1519,378,0,0" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lbl_finish_date" Content="-" HorizontalAlignment="Left" Margin="1519,409,0,0" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lbl_today_date" Content="-" HorizontalAlignment="Left" Margin="1519,440,0,0" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lbl_payment" Content="-" HorizontalAlignment="Left" Margin="1519,481,0,0" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lbl_payment_date" Content="-" HorizontalAlignment="Left" Margin="1519,512,0,0" VerticalAlignment="Top" Width="173"/>
+        <Label x:Name="lbl_txt" Content="-" HorizontalAlignment="Left" Margin="1421,574,0,0" VerticalAlignment="Top" Width="437" Height="68"/>
+        <Label x:Name="lbl_day" Content="-" HorizontalAlignment="Left" Margin="1413,647,0,0" VerticalAlignment="Top" Width="124"/>
+        <Label x:Name="lbl_day_c" Content="-" HorizontalAlignment="Left" Margin="1747,647,0,0" VerticalAlignment="Top" Width="111"/>
+        <Label x:Name="lbl_vat" Content="23 %" HorizontalAlignment="Left" Margin="1432,709,0,0" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="lbl_netto" Content="-" HorizontalAlignment="Left" Margin="1591,709,0,0" VerticalAlignment="Top" Width="99"/>
+        <Label x:Name="lbl_brutto" Content="-" HorizontalAlignment="Left" Margin="1782,709,0,0" VerticalAlignment="Top" Width="76"/>
+        <Button x:Name="btn_clear" Content="wyczyść" HorizontalAlignment="Left" Margin="1826,183,0,0" VerticalAlignment="Top" Width="68" Foreground="#FF707070" Background="#FFE8E8E8" Click="Btn_clear_Click"/>
+        <Label x:Name="lbl_time1" Content="" HorizontalAlignment="Left" Margin="10,984,0,0" HorizontalContentAlignment="Left" VerticalAlignment="Top" Foreground="White" Width="286"/>
+
+    </Grid>
+</Window>

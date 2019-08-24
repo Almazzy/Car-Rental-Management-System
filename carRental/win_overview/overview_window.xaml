@@ -1,0 +1,153 @@
+﻿<Window x:Class="carRental.win_overview.overview_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carRental.win_overview"
+        mc:Ignorable="d"
+        Title="overview_window" WindowStyle="ToolWindow" Background="#FFEAE7DC"
+        ResizeMode="CanResizeWithGrip" MaxWidth="1925" MaxHeight="1050" Width="1925" Height="1050" WindowStartupLocation="CenterOwner" Left="-5" Top="-5">
+    <Grid Background="#FFE8E8E8">
+        <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="100" Margin="0,920,0,0" Stroke="Black" VerticalAlignment="Top" Width="1917"/>
+        <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="162" Stroke="LightGray" VerticalAlignment="Top" Width="1917" Opacity="0.5"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="727,-1,0,0" VerticalAlignment="Top" Width="198" Background="#FFA69FC7"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="727,86,0,0" VerticalAlignment="Top" Width="198" Background="#FFA69FC7"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="682,43,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5" Background="#FFA69FC7">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="881,43,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.5,0.5" Background="#FFA69FC7">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <DataGrid AutoGenerateColumns="False" x:Name="dataGrid1" HorizontalAlignment="Left" Height="656" Margin="407,228,0,0" VerticalAlignment="Top" Width="1093" HorizontalContentAlignment="Center">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ubezpieczyciel" Binding="{Binding ubezpieczyciel}" Width="131"/>
+                <DataGridTextColumn Header="serwis wykonujący" Binding="{Binding miejsce_wykonania}" Width="131"/>
+                <DataGridTextColumn Header="cena (brutto)" Binding="{Binding kwota_brutto}" Width="90"/>
+                <DataGridTextColumn Header="data początkowa" Binding="{Binding data_od}" Width="131"/>
+                <DataGridTextColumn Header="zakończenie polisy" Binding="{Binding data_do}" Width="131"/>
+                <DataGridTextColumn Header="następny przegląd" Binding="{Binding data_doo}" Width="131"/>
+                <DataGridTextColumn Header="nr rejestracyjny" Binding="{Binding nr_rejestracyjny}" Width="131"/>
+                <DataGridTextColumn Header="marka" Binding="{Binding marka}" Width="111"/>
+                <DataGridTextColumn Header="model" Binding="{Binding model}" Width="111"/>
+                <DataGridTextColumn Header="notatki" Binding="{Binding notatka}" Width="131"/>
+                <DataGridTextColumn Header="status" Binding="{Binding status}" Width="131"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="btn_all_ub" Content="&#xA;&#xA;&#xA;          aktualne wszystkie" HorizontalAlignment="Left" Margin="69,280,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_ub_Click" />
+        <Image x:Name="im1" Source="/carRental;component/pic/um1s.png" HorizontalAlignment="Left" Height="70" Margin="75,293,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="lbl_all_ub" Content="" HorizontalAlignment="Left" Margin="259,265,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn_all_p" Content="&#xA;&#xA;&#xA;aktualne wszystkie          " HorizontalAlignment="Left" Margin="1559,280,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_p_Click" />
+        <Image x:Name="im4" Source="/carRental;component/pic/um1s.png" HorizontalAlignment="Left" Height="70" Margin="1762,293,0,0" VerticalAlignment="Top" Width="70" RenderTransformOrigin="0.403,0.048"/>
+        <Label x:Name="lbl_all_p" Content="" HorizontalAlignment="Left" Margin="1559,265,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Left"/>
+        <Button x:Name="btn_little_time_ub" Content="&#xA;&#xA;&#xA;          krótki termin" HorizontalAlignment="Left" Margin="69,403,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_little_time_ub_Click" />
+        <Image x:Name="im2" Source="/carRental;component/pic/um2s.png" HorizontalAlignment="Left" Height="70" Margin="75,416,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="lbl_little_time_ub" Content="" HorizontalAlignment="Left" Margin="259,388,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn_history_ub" Content="&#xA;&#xA;&#xA;          historia ubezpieczeń" HorizontalAlignment="Left" Margin="69,526,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_history_ub_Click" />
+        <Image x:Name="im3" Source="/carRental;component/pic/um3s.png" HorizontalAlignment="Left" Height="70" Margin="75,544,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="lbl_history_ub" Content="" HorizontalAlignment="Left" Margin="259,511,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn_little_time_p" Content="&#xA;&#xA;&#xA;krótki termin         " HorizontalAlignment="Left" Margin="1559,403,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_little_time_p_Click" />
+        <Image x:Name="im5" Source="/carRental;component/pic/um2s.png" HorizontalAlignment="Left" Height="70" Margin="1762,416,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="lbl_little_time_p" Content="" HorizontalAlignment="Left" Margin="1559,388,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Left"/>
+        <Button x:Name="btn_history_p" Content="&#xA;&#xA;&#xA;historia przeglądów          " HorizontalAlignment="Left" Margin="1559,526,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_history_p_Click" />
+        <Image x:Name="im6" Source="/carRental;component/pic/um3s.png" HorizontalAlignment="Left" Height="70" Margin="1762,544,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="lbl_history_p" Content="" HorizontalAlignment="Left" Margin="1559,511,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Left"/>
+        <Rectangle x:Name="rec1" Fill="#FFE8E8E8" HorizontalAlignment="Left" Height="32" Margin="69,228,0,0" Stroke="#FF707070" VerticalAlignment="Top" Width="279"/>
+        <Label x:Name="lbl1" HorizontalContentAlignment="Center" Content="Polisy" HorizontalAlignment="Left" Margin="69,228,0,0" VerticalAlignment="Top" Height="32" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Width="279"/>
+        <Rectangle x:Name="rec2" Fill="#FFE8E8E8" HorizontalAlignment="Left" Height="32" Margin="1559,228,0,0" Stroke="#FF707070" VerticalAlignment="Top" Width="279"/>
+        <Label x:Name="lbl2" HorizontalContentAlignment="Center" Content="Przeglądy" HorizontalAlignment="Left" Margin="1559,228,0,0" VerticalAlignment="Top" Height="32" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Width="279"/>
+        <TextBox x:Name="txt_search" HorizontalAlignment="Left" Height="23" Margin="670,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="90" TextChanged="Txt_search_TextChanged"/>
+        <TextBox x:Name="txt_s4" HorizontalAlignment="Left" Height="23" Margin="760,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" TextChanged="Txt_s4_TextChanged"/>
+        <TextBox x:Name="txt_s1" HorizontalAlignment="Left" Height="23" Margin="407,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" TextChanged="Txt_s1_TextChanged"/>
+        <TextBox x:Name="txt_s2" HorizontalAlignment="Left" Height="23" Margin="539,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TextChanged="Txt_s2_TextChanged"/>
+        <TextBox x:Name="txt_s5" HorizontalAlignment="Left" Height="23" Margin="890,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132" TextChanged="Txt_s5_TextChanged"/>
+        <TextBox x:Name="txt_s6" HorizontalAlignment="Left" Height="23" Margin="1153,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TextChanged="Txt_s6_TextChanged"/>
+        <TextBox x:Name="txt_s7" HorizontalAlignment="Left" Height="23" Margin="1284,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="111" TextChanged="Txt_s7_TextChanged"/>
+        <TextBox x:Name="txt_s8" HorizontalAlignment="Left" Height="23" Margin="1395,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="105" TextChanged="Txt_s8_TextChanged"/>
+        <Label x:Name="lbl_time1" Content="" HorizontalAlignment="Left" Margin="10,984,0,0" HorizontalContentAlignment="Left" VerticalAlignment="Top" Foreground="White" Width="286"/>
+        <TextBox x:Name="txt_s9" HorizontalAlignment="Left" Height="23" Margin="1022,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TextChanged="Txt_s9_TextChanged"/>
+        <Button x:Name="btn_new_p" HorizontalAlignment="Left" Margin="1713,920,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dodaj aktualny przegląd" Click="Btn_new_p_Click">
+            <Image Source="/carRental;component/pic/ico4.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
+        </Button>
+        <Button x:Name="btn_new_ub" HorizontalAlignment="Left" Margin="1808,920,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dodaj aktualną polisę" Click="Btn_new_ub_Click">
+            <Image Source="/carRental;component/pic/ico3.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
+        </Button>
+        <Button x:Name="btn_new_uw" HorizontalAlignment="Left" Margin="1618,920,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dodaj nowego ubezpieczyciela la" Click="Btn_new_uw_Click">
+            <Image Source="/carRental;component/pic/ico2.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
+        </Button>
+        <Button x:Name="btn_new_service" HorizontalAlignment="Left" Margin="1523,920,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dodaj nowy warsztat" Click="Btn_new_service_Click">
+            <Image Source="/carRental;component/pic/ico1.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
+        </Button>
+        <Separator HorizontalAlignment="Left" Height="16" Margin="69,634,0,0" VerticalAlignment="Top" Width="278"/>
+        <Separator HorizontalAlignment="Left" Height="16" Margin="-287,560,0,0" VerticalAlignment="Top" Width="682" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.025"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Separator HorizontalAlignment="Left" Height="16" Margin="1560,634,0,0" VerticalAlignment="Top" Width="278"/>
+        <Separator HorizontalAlignment="Left" Height="16" Margin="1514,560,-277,0" VerticalAlignment="Top" Width="680" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.025"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <Button x:Name="btn_not_use_ub" Content="&#xA;&#xA;&#xA;          nieprzypisane" HorizontalAlignment="Left" Margin="69,655,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_not_use_ub_Click" />
+        <Image x:Name="im7" Source="/carRental;component/pic/unps.png" HorizontalAlignment="Left" Height="59" Margin="83,676,0,0" VerticalAlignment="Top" Width="55"/>
+        <Label x:Name="lbl_not_use_ub" Content="" HorizontalAlignment="Left" Margin="259,640,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
+        <Button x:Name="btn_not_use_p" Content="&#xA;&#xA;&#xA;nieprzypisane          " HorizontalAlignment="Left" Margin="1559,655,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_not_use_p_Click" />
+        <Image x:Name="im8" Source="/carRental;component/pic/unps.png" HorizontalAlignment="Left" Height="59" Margin="1768,676,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="lbl_not_use_p" Content="" HorizontalAlignment="Left" Margin="1559,640,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Left"/>
+        <Button x:Name="btn_rentals" Content="   Wynajmy" HorizontalAlignment="Left" Margin="38,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FF9ABF7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_rentals_Click" />
+        <Button x:Name="btn_customers" Content="   Klienci" HorizontalAlignment="Left" Margin="268,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFF0D264" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_customers_Click" />
+        <Button x:Name="btn_cars" Content="      Samochody" HorizontalAlignment="Left" Margin="500,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFCB99C5" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_cars_Click" />
+        <Button x:Name="btn_employees" Content="      Pracownicy" HorizontalAlignment="Left" Margin="1192,54,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FF7FB1BF" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_employees_Click" />
+        <Image Source="/carRental;component/pic/emp/hb.png"  HorizontalAlignment="Left" Height="40" Margin="1204,74,0,0" VerticalAlignment="Top" Width="38"/>
+        <Image Source="/carRental;component/pic/key.png" HorizontalAlignment="Left" Height="40" Margin="48,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="276,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/car.png" HorizontalAlignment="Left" Height="40" Margin="508,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Button x:Name="btn_overview" Content="     Polisy &amp;&#xA;    Przęglądy" HorizontalAlignment="Left" Margin="730,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFA69FC7" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_overview_Click" />
+        <Button x:Name="btn_finance" Content="   Finanse" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click_1" />
+        <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="40" Margin="740,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="791,69,0,0" VerticalAlignment="Top" Width="94" Background="White"/>
+        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
+            <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
+        </Button>
+        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click">
+            <Image Source="/carRental;component/pic/logout.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
+        </Button>
+        <Separator HorizontalAlignment="Left" Height="100" Margin="1760,30,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90.033"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+
+    </Grid>
+</Window>

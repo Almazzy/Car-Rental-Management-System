@@ -1,0 +1,36 @@
+﻿<Window x:Class="carRental.win_cars.change_status_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carRental.win_cars"
+        mc:Ignorable="d"
+         Title=" e-carRent - zmień status wybranego samochodu." Height="600" Width="517" WindowStyle="ToolWindow" Background="#FFE8E8E8"
+        ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="509"/>
+        <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="63" Margin="0,507,0,0" Stroke="Black" VerticalAlignment="Top" Width="509"/>
+        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="301" Margin="104,22,0,0"/>
+        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="10" Margin="45,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="415"/>
+        <Label Content="wyszukaj pojazd:" HorizontalAlignment="Left" Margin="40,153,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label Content="marka:" HorizontalAlignment="Left" Margin="40,254,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <ComboBox x:Name="combo_car" HorizontalAlignment="Left" Margin="104,192,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16" SelectionChanged="Combo_car_SelectionChanged"/>
+        <Button x:Name="btn_change" Content="d o k o n a j  z m i a n y" HorizontalAlignment="Left" Margin="104,512,0,0" VerticalAlignment="Top" Width="301" Height="42" FontFamily="Rockwell Nova Light" FontSize="16" Background="#FF7FB1BF" Foreground="White" Click="Btn_change_Click"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="45,171,0,0" VerticalAlignment="Top" Width="131" Background="#FF9ABF7F"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf1" Content="-" HorizontalAlignment="Left" Margin="167,254,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Label Content="model:" HorizontalAlignment="Left" Margin="40,296,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf2" Content="-" HorizontalAlignment="Left" Margin="167,296,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="45,270,0,0" VerticalAlignment="Top" Width="51" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="45,312,0,0" VerticalAlignment="Top" Width="51" Background="#FF9ABF7F"/>
+        <Label Content="zmien status&#xD;&#xA;     pojazdu"  HorizontalAlignment="Left" Margin="104,36,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Perpetua Titling MT" Foreground="White" HorizontalContentAlignment="Center" Width="301" Height="70"/>
+        <Label Content="stan:" HorizontalAlignment="Left" Margin="40,337,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf5" Content="-" HorizontalAlignment="Left" Margin="167,337,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="45,353,0,0" VerticalAlignment="Top" Width="32" Background="#FF9ABF7F"/>
+        <ComboBox x:Name="combo_status" HorizontalAlignment="Left" Margin="104,432,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16">
+            <ComboBoxItem Content="Serwis"/>
+            <ComboBoxItem Content="Dyzur"/>
+        </ComboBox>
+        <Label Content="wybierz status:" HorizontalAlignment="Left" Margin="35,393,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="40,411,0,0" VerticalAlignment="Top" Width="114" Background="#FF9ABF7F"/>
+    </Grid>
+</Window>

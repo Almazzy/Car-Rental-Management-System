@@ -1,0 +1,37 @@
+﻿<Window x:Class="carRental.win_cars.delete_car_window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:carRental.win_cars"
+        mc:Ignorable="d"
+        Title=" e-carRent - dezaktywuj wybrany samochód." Height="600" Width="517" WindowStyle="ToolWindow" Background="#FFE8E8E8"
+        ResizeMode="CanResizeWithGrip">
+    <Grid>
+        <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="509"/>
+        <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="63" Margin="0,507,0,0" Stroke="Black" VerticalAlignment="Top" Width="509"/>
+        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="301" Margin="104,22,0,0"/>
+        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="10" Margin="45,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="415"/>
+        <Label Content="wyszukaj pojazd:" HorizontalAlignment="Left" Margin="35,151,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label Content="marka:" HorizontalAlignment="Left" Margin="40,268,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <ComboBox x:Name="combo_car" HorizontalAlignment="Left" Margin="104,192,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16" SelectionChanged="Combo_car_SelectionChanged"/>
+        <Button x:Name="btn_end_step1" Content="p o t w i e r d z" HorizontalAlignment="Left" Margin="82,512,0,0" VerticalAlignment="Top" Width="165" Height="42" FontFamily="Rockwell Nova Light" FontSize="16" Background="#FFBCBF7F" Foreground="White" Click="Btn_end_step1_Click"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="40,169,0,0" VerticalAlignment="Top" Width="131" Background="#FF9ABF7F"/>
+        <Button x:Name="btn_end_step2" Content="d e z a k t y w u j" HorizontalAlignment="Left" Margin="260,512,0,0" VerticalAlignment="Top" Width="164" Height="42" Background="#FFBF7F7F" Foreground="White" FontSize="16" FontFamily="Rockwell Nova Light" Click="Btn_end_step2_Click"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf1" Content="-" HorizontalAlignment="Left" Margin="167,268,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Label Content="model:" HorizontalAlignment="Left" Margin="40,310,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf2" Content="-" HorizontalAlignment="Left" Margin="167,310,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Label Content="vin:" HorizontalAlignment="Left" Margin="40,353,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf3" Content="-" HorizontalAlignment="Left" Margin="167,353,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="45,284,0,0" VerticalAlignment="Top" Width="51" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="45,326,0,0" VerticalAlignment="Top" Width="51" Background="#FF9ABF7F"/>
+        <Label Content="       dezaktywuj &#xD;&#xA;wybrany samochód"  HorizontalAlignment="Left" Margin="104,36,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Perpetua Titling MT" Foreground="White" HorizontalContentAlignment="Center" Width="301" Height="70"/>
+        <Label Content="rok produkcji:" HorizontalAlignment="Left" Margin="40,396,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf4" Content="-" HorizontalAlignment="Left" Margin="167,396,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="45,413,0,0" VerticalAlignment="Top" Width="108" Background="#FF9ABF7F"/>
+        <Label Content="stan:" HorizontalAlignment="Left" Margin="40,440,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Label HorizontalContentAlignment="Right" x:Name="lbl_inf5" Content="-" HorizontalAlignment="Left" Margin="167,440,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="45,456,0,0" VerticalAlignment="Top" Width="32" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="45,369,0,0" VerticalAlignment="Top" Width="25" Background="#FF9ABF7F"/>
+    </Grid>
+</Window>
