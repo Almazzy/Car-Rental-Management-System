@@ -98,16 +98,17 @@ namespace carRental.win_finance
 
         private void Btn_gen_invoice_Click(object sender, RoutedEventArgs e)
         {
-            opacity(1);
-            ShowDoc();
+            if (string.IsNullOrWhiteSpace(txt_no_f.Text))
+            {
+                MessageBox.Show("Podany numer faktury jest błędny lub nieistnieje. Spróbuj ponownie.", "Błąd!");
+            }
+            else {
+                opacity(1);
+                ShowDoc();
+            }
         }
 
         private void Btn_download_pdf_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Btn_download_doc_Click(object sender, RoutedEventArgs e)
         {
             Create_Document();
         }
@@ -135,9 +136,13 @@ namespace carRental.win_finance
 
         private void Btn_clear_Click(object sender, RoutedEventArgs e)
         {
-
+            opacity(0);
         }
 
+        private void Btn_add_f_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
 
         //--================================================================--
 
@@ -389,5 +394,7 @@ namespace carRental.win_finance
     
 
         }
+
+       
     }
 }

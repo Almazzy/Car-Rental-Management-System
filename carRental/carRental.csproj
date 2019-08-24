@@ -105,6 +105,9 @@
     <Compile Include="win_employees\employees_window.xaml.cs">
       <DependentUpon>employees_window.xaml</DependentUpon>
     </Compile>
+    <Compile Include="win_finance\add_new_inv_window.xaml.cs">
+      <DependentUpon>add_new_inv_window.xaml</DependentUpon>
+    </Compile>
     <Compile Include="win_finance\finance_window.xaml.cs">
       <DependentUpon>finance_window.xaml</DependentUpon>
     </Compile>
@@ -183,6 +186,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="win_employees\employees_window.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="win_finance\add_new_inv_window.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

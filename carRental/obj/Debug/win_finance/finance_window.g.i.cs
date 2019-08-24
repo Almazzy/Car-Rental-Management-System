@@ -115,7 +115,7 @@ namespace carRental.win_finance {
         
         #line 90 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_download_doc;
+        internal System.Windows.Controls.Button btn_download_pdf;
         
         #line default
         #line hidden
@@ -123,7 +123,7 @@ namespace carRental.win_finance {
         
         #line 91 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_download_pdf;
+        internal System.Windows.Controls.Button btn_gen_invoice;
         
         #line default
         #line hidden
@@ -131,7 +131,7 @@ namespace carRental.win_finance {
         
         #line 92 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_gen_invoice;
+        internal System.Windows.Controls.TextBox txt_no_f;
         
         #line default
         #line hidden
@@ -139,7 +139,7 @@ namespace carRental.win_finance {
         
         #line 93 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_no_f;
+        internal System.Windows.Controls.TextBox txt_s3;
         
         #line default
         #line hidden
@@ -147,7 +147,7 @@ namespace carRental.win_finance {
         
         #line 94 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s3;
+        internal System.Windows.Controls.TextBox txt_s4;
         
         #line default
         #line hidden
@@ -155,7 +155,7 @@ namespace carRental.win_finance {
         
         #line 95 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s4;
+        internal System.Windows.Controls.TextBox txt_s1;
         
         #line default
         #line hidden
@@ -163,7 +163,7 @@ namespace carRental.win_finance {
         
         #line 96 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s1;
+        internal System.Windows.Controls.TextBox txt_s2;
         
         #line default
         #line hidden
@@ -171,7 +171,7 @@ namespace carRental.win_finance {
         
         #line 97 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s2;
+        internal System.Windows.Controls.TextBox txt_s5;
         
         #line default
         #line hidden
@@ -179,7 +179,7 @@ namespace carRental.win_finance {
         
         #line 98 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s5;
+        internal System.Windows.Controls.TextBox txt_s6;
         
         #line default
         #line hidden
@@ -187,7 +187,7 @@ namespace carRental.win_finance {
         
         #line 99 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s6;
+        internal System.Windows.Controls.TextBox txt_s7;
         
         #line default
         #line hidden
@@ -195,7 +195,7 @@ namespace carRental.win_finance {
         
         #line 100 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s7;
+        internal System.Windows.Controls.TextBox txt_s8;
         
         #line default
         #line hidden
@@ -203,7 +203,7 @@ namespace carRental.win_finance {
         
         #line 101 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s8;
+        internal System.Windows.Controls.TextBox txt_s9;
         
         #line default
         #line hidden
@@ -211,7 +211,7 @@ namespace carRental.win_finance {
         
         #line 102 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBox txt_s9;
+        internal System.Windows.Controls.Button btn_all_invoices;
         
         #line default
         #line hidden
@@ -219,7 +219,7 @@ namespace carRental.win_finance {
         
         #line 103 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_all_invoices;
+        internal System.Windows.Controls.Image im1;
         
         #line default
         #line hidden
@@ -227,7 +227,7 @@ namespace carRental.win_finance {
         
         #line 104 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image im1;
+        internal System.Windows.Controls.Label lbl_all_invoices;
         
         #line default
         #line hidden
@@ -235,7 +235,7 @@ namespace carRental.win_finance {
         
         #line 105 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_all_invoices;
+        internal System.Windows.Controls.Button btn_c_invoices;
         
         #line default
         #line hidden
@@ -243,7 +243,7 @@ namespace carRental.win_finance {
         
         #line 106 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_c_invoices;
+        internal System.Windows.Controls.Image im2;
         
         #line default
         #line hidden
@@ -251,7 +251,7 @@ namespace carRental.win_finance {
         
         #line 107 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image im2;
+        internal System.Windows.Controls.Label lbl_c_invoices;
         
         #line default
         #line hidden
@@ -259,7 +259,7 @@ namespace carRental.win_finance {
         
         #line 108 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_c_invoices;
+        internal System.Windows.Controls.Button btn_b_invoices;
         
         #line default
         #line hidden
@@ -267,7 +267,7 @@ namespace carRental.win_finance {
         
         #line 109 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_b_invoices;
+        internal System.Windows.Controls.Image im3;
         
         #line default
         #line hidden
@@ -275,7 +275,7 @@ namespace carRental.win_finance {
         
         #line 110 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Image im3;
+        internal System.Windows.Controls.Label lbl_b_invoices;
         
         #line default
         #line hidden
@@ -283,7 +283,7 @@ namespace carRental.win_finance {
         
         #line 111 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_b_invoices;
+        internal System.Windows.Controls.Label l1;
         
         #line default
         #line hidden
@@ -291,7 +291,7 @@ namespace carRental.win_finance {
         
         #line 112 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l1;
+        internal System.Windows.Controls.Label l7;
         
         #line default
         #line hidden
@@ -299,7 +299,7 @@ namespace carRental.win_finance {
         
         #line 113 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l7;
+        internal System.Windows.Controls.Label l2;
         
         #line default
         #line hidden
@@ -307,7 +307,7 @@ namespace carRental.win_finance {
         
         #line 114 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l2;
+        internal System.Windows.Controls.Label l3;
         
         #line default
         #line hidden
@@ -315,7 +315,7 @@ namespace carRental.win_finance {
         
         #line 115 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l3;
+        internal System.Windows.Controls.Label l4;
         
         #line default
         #line hidden
@@ -323,7 +323,7 @@ namespace carRental.win_finance {
         
         #line 116 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l4;
+        internal System.Windows.Controls.Label l5;
         
         #line default
         #line hidden
@@ -331,7 +331,7 @@ namespace carRental.win_finance {
         
         #line 117 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l5;
+        internal System.Windows.Controls.Label l6;
         
         #line default
         #line hidden
@@ -339,7 +339,7 @@ namespace carRental.win_finance {
         
         #line 118 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l6;
+        internal System.Windows.Controls.Label l11;
         
         #line default
         #line hidden
@@ -347,7 +347,7 @@ namespace carRental.win_finance {
         
         #line 119 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l11;
+        internal System.Windows.Controls.Label l9;
         
         #line default
         #line hidden
@@ -355,7 +355,7 @@ namespace carRental.win_finance {
         
         #line 120 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l9;
+        internal System.Windows.Controls.Label l10;
         
         #line default
         #line hidden
@@ -363,7 +363,7 @@ namespace carRental.win_finance {
         
         #line 121 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l10;
+        internal System.Windows.Controls.Label l12;
         
         #line default
         #line hidden
@@ -371,7 +371,7 @@ namespace carRental.win_finance {
         
         #line 122 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l12;
+        internal System.Windows.Controls.Label l13;
         
         #line default
         #line hidden
@@ -379,7 +379,7 @@ namespace carRental.win_finance {
         
         #line 123 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l13;
+        internal System.Windows.Controls.Label l14;
         
         #line default
         #line hidden
@@ -387,7 +387,7 @@ namespace carRental.win_finance {
         
         #line 124 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l14;
+        internal System.Windows.Controls.Label l18;
         
         #line default
         #line hidden
@@ -395,7 +395,7 @@ namespace carRental.win_finance {
         
         #line 125 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l18;
+        internal System.Windows.Controls.Label l15;
         
         #line default
         #line hidden
@@ -403,7 +403,7 @@ namespace carRental.win_finance {
         
         #line 126 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l15;
+        internal System.Windows.Controls.Label l16;
         
         #line default
         #line hidden
@@ -411,7 +411,7 @@ namespace carRental.win_finance {
         
         #line 127 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l16;
+        internal System.Windows.Controls.Label l17;
         
         #line default
         #line hidden
@@ -419,7 +419,7 @@ namespace carRental.win_finance {
         
         #line 128 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l17;
+        internal System.Windows.Controls.Label l20;
         
         #line default
         #line hidden
@@ -427,7 +427,7 @@ namespace carRental.win_finance {
         
         #line 129 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l20;
+        internal System.Windows.Controls.Label l21;
         
         #line default
         #line hidden
@@ -435,7 +435,7 @@ namespace carRental.win_finance {
         
         #line 130 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l21;
+        internal System.Windows.Controls.Label l19;
         
         #line default
         #line hidden
@@ -443,7 +443,7 @@ namespace carRental.win_finance {
         
         #line 131 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l19;
+        internal System.Windows.Controls.Label l24;
         
         #line default
         #line hidden
@@ -451,7 +451,7 @@ namespace carRental.win_finance {
         
         #line 132 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l24;
+        internal System.Windows.Controls.Label l25;
         
         #line default
         #line hidden
@@ -459,7 +459,7 @@ namespace carRental.win_finance {
         
         #line 133 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l25;
+        internal System.Windows.Controls.Label lbl_f_no;
         
         #line default
         #line hidden
@@ -467,7 +467,7 @@ namespace carRental.win_finance {
         
         #line 134 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_f_no;
+        internal System.Windows.Controls.Label l8;
         
         #line default
         #line hidden
@@ -475,7 +475,7 @@ namespace carRental.win_finance {
         
         #line 135 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l8;
+        internal System.Windows.Controls.Label l23;
         
         #line default
         #line hidden
@@ -483,7 +483,7 @@ namespace carRental.win_finance {
         
         #line 136 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l23;
+        internal System.Windows.Controls.Label l22;
         
         #line default
         #line hidden
@@ -491,7 +491,7 @@ namespace carRental.win_finance {
         
         #line 137 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label l22;
+        internal System.Windows.Controls.Label lbl_n_name;
         
         #line default
         #line hidden
@@ -499,7 +499,7 @@ namespace carRental.win_finance {
         
         #line 138 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_n_name;
+        internal System.Windows.Controls.Label lbl_n_no;
         
         #line default
         #line hidden
@@ -507,7 +507,7 @@ namespace carRental.win_finance {
         
         #line 139 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_n_no;
+        internal System.Windows.Controls.TextBlock textblock_n_address;
         
         #line default
         #line hidden
@@ -515,7 +515,7 @@ namespace carRental.win_finance {
         
         #line 140 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.TextBlock textblock_n_address;
+        internal System.Windows.Controls.Label lbl_start_date;
         
         #line default
         #line hidden
@@ -523,7 +523,7 @@ namespace carRental.win_finance {
         
         #line 141 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_start_date;
+        internal System.Windows.Controls.Label lbl_finish_date;
         
         #line default
         #line hidden
@@ -531,7 +531,7 @@ namespace carRental.win_finance {
         
         #line 142 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_finish_date;
+        internal System.Windows.Controls.Label lbl_today_date;
         
         #line default
         #line hidden
@@ -539,7 +539,7 @@ namespace carRental.win_finance {
         
         #line 143 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_today_date;
+        internal System.Windows.Controls.Label lbl_payment;
         
         #line default
         #line hidden
@@ -547,7 +547,7 @@ namespace carRental.win_finance {
         
         #line 144 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_payment;
+        internal System.Windows.Controls.Label lbl_payment_date;
         
         #line default
         #line hidden
@@ -555,7 +555,7 @@ namespace carRental.win_finance {
         
         #line 145 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_payment_date;
+        internal System.Windows.Controls.Label lbl_txt;
         
         #line default
         #line hidden
@@ -563,7 +563,7 @@ namespace carRental.win_finance {
         
         #line 146 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_txt;
+        internal System.Windows.Controls.Label lbl_day;
         
         #line default
         #line hidden
@@ -571,7 +571,7 @@ namespace carRental.win_finance {
         
         #line 147 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_day;
+        internal System.Windows.Controls.Label lbl_day_c;
         
         #line default
         #line hidden
@@ -579,7 +579,7 @@ namespace carRental.win_finance {
         
         #line 148 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_day_c;
+        internal System.Windows.Controls.Label lbl_vat;
         
         #line default
         #line hidden
@@ -587,7 +587,7 @@ namespace carRental.win_finance {
         
         #line 149 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_vat;
+        internal System.Windows.Controls.Label lbl_netto;
         
         #line default
         #line hidden
@@ -595,7 +595,7 @@ namespace carRental.win_finance {
         
         #line 150 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_netto;
+        internal System.Windows.Controls.Label lbl_brutto;
         
         #line default
         #line hidden
@@ -603,7 +603,7 @@ namespace carRental.win_finance {
         
         #line 151 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_brutto;
+        internal System.Windows.Controls.Button btn_clear;
         
         #line default
         #line hidden
@@ -611,7 +611,7 @@ namespace carRental.win_finance {
         
         #line 152 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Button btn_clear;
+        internal System.Windows.Controls.Label lbl_time1;
         
         #line default
         #line hidden
@@ -619,7 +619,7 @@ namespace carRental.win_finance {
         
         #line 153 "..\..\..\win_finance\finance_window.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
-        internal System.Windows.Controls.Label lbl_time1;
+        internal System.Windows.Controls.Button btn_add_f;
         
         #line default
         #line hidden
@@ -730,238 +730,238 @@ namespace carRental.win_finance {
             this.dataGrid1 = ((System.Windows.Controls.DataGrid)(target));
             return;
             case 10:
-            this.btn_download_doc = ((System.Windows.Controls.Button)(target));
-            
-            #line 90 "..\..\..\win_finance\finance_window.xaml"
-            this.btn_download_doc.Click += new System.Windows.RoutedEventHandler(this.Btn_download_doc_Click);
-            
-            #line default
-            #line hidden
-            return;
-            case 11:
             this.btn_download_pdf = ((System.Windows.Controls.Button)(target));
             
-            #line 91 "..\..\..\win_finance\finance_window.xaml"
+            #line 90 "..\..\..\win_finance\finance_window.xaml"
             this.btn_download_pdf.Click += new System.Windows.RoutedEventHandler(this.Btn_download_pdf_Click);
             
             #line default
             #line hidden
             return;
-            case 12:
+            case 11:
             this.btn_gen_invoice = ((System.Windows.Controls.Button)(target));
             
-            #line 92 "..\..\..\win_finance\finance_window.xaml"
+            #line 91 "..\..\..\win_finance\finance_window.xaml"
             this.btn_gen_invoice.Click += new System.Windows.RoutedEventHandler(this.Btn_gen_invoice_Click);
             
             #line default
             #line hidden
             return;
-            case 13:
+            case 12:
             this.txt_no_f = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 14:
+            case 13:
             this.txt_s3 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 15:
+            case 14:
             this.txt_s4 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 16:
+            case 15:
             this.txt_s1 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 17:
+            case 16:
             this.txt_s2 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 18:
+            case 17:
             this.txt_s5 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 19:
+            case 18:
             this.txt_s6 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 20:
+            case 19:
             this.txt_s7 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 21:
+            case 20:
             this.txt_s8 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 22:
+            case 21:
             this.txt_s9 = ((System.Windows.Controls.TextBox)(target));
             return;
-            case 23:
+            case 22:
             this.btn_all_invoices = ((System.Windows.Controls.Button)(target));
             
-            #line 103 "..\..\..\win_finance\finance_window.xaml"
+            #line 102 "..\..\..\win_finance\finance_window.xaml"
             this.btn_all_invoices.Click += new System.Windows.RoutedEventHandler(this.Btn_all_invoice_Click);
             
             #line default
             #line hidden
             return;
-            case 24:
+            case 23:
             this.im1 = ((System.Windows.Controls.Image)(target));
             return;
-            case 25:
+            case 24:
             this.lbl_all_invoices = ((System.Windows.Controls.Label)(target));
             return;
-            case 26:
+            case 25:
             this.btn_c_invoices = ((System.Windows.Controls.Button)(target));
             
-            #line 106 "..\..\..\win_finance\finance_window.xaml"
+            #line 105 "..\..\..\win_finance\finance_window.xaml"
             this.btn_c_invoices.Click += new System.Windows.RoutedEventHandler(this.Btn_c_invoices_Click);
             
             #line default
             #line hidden
             return;
-            case 27:
+            case 26:
             this.im2 = ((System.Windows.Controls.Image)(target));
             return;
-            case 28:
+            case 27:
             this.lbl_c_invoices = ((System.Windows.Controls.Label)(target));
             return;
-            case 29:
+            case 28:
             this.btn_b_invoices = ((System.Windows.Controls.Button)(target));
             
-            #line 109 "..\..\..\win_finance\finance_window.xaml"
+            #line 108 "..\..\..\win_finance\finance_window.xaml"
             this.btn_b_invoices.Click += new System.Windows.RoutedEventHandler(this.Btn_b_invoices_Click);
             
             #line default
             #line hidden
             return;
-            case 30:
+            case 29:
             this.im3 = ((System.Windows.Controls.Image)(target));
             return;
-            case 31:
+            case 30:
             this.lbl_b_invoices = ((System.Windows.Controls.Label)(target));
             return;
-            case 32:
+            case 31:
             this.l1 = ((System.Windows.Controls.Label)(target));
             return;
-            case 33:
+            case 32:
             this.l7 = ((System.Windows.Controls.Label)(target));
             return;
-            case 34:
+            case 33:
             this.l2 = ((System.Windows.Controls.Label)(target));
             return;
-            case 35:
+            case 34:
             this.l3 = ((System.Windows.Controls.Label)(target));
             return;
-            case 36:
+            case 35:
             this.l4 = ((System.Windows.Controls.Label)(target));
             return;
-            case 37:
+            case 36:
             this.l5 = ((System.Windows.Controls.Label)(target));
             return;
-            case 38:
+            case 37:
             this.l6 = ((System.Windows.Controls.Label)(target));
             return;
-            case 39:
+            case 38:
             this.l11 = ((System.Windows.Controls.Label)(target));
             return;
-            case 40:
+            case 39:
             this.l9 = ((System.Windows.Controls.Label)(target));
             return;
-            case 41:
+            case 40:
             this.l10 = ((System.Windows.Controls.Label)(target));
             return;
-            case 42:
+            case 41:
             this.l12 = ((System.Windows.Controls.Label)(target));
             return;
-            case 43:
+            case 42:
             this.l13 = ((System.Windows.Controls.Label)(target));
             return;
-            case 44:
+            case 43:
             this.l14 = ((System.Windows.Controls.Label)(target));
             return;
-            case 45:
+            case 44:
             this.l18 = ((System.Windows.Controls.Label)(target));
             return;
-            case 46:
+            case 45:
             this.l15 = ((System.Windows.Controls.Label)(target));
             return;
-            case 47:
+            case 46:
             this.l16 = ((System.Windows.Controls.Label)(target));
             return;
-            case 48:
+            case 47:
             this.l17 = ((System.Windows.Controls.Label)(target));
             return;
-            case 49:
+            case 48:
             this.l20 = ((System.Windows.Controls.Label)(target));
             return;
-            case 50:
+            case 49:
             this.l21 = ((System.Windows.Controls.Label)(target));
             return;
-            case 51:
+            case 50:
             this.l19 = ((System.Windows.Controls.Label)(target));
             return;
-            case 52:
+            case 51:
             this.l24 = ((System.Windows.Controls.Label)(target));
             return;
-            case 53:
+            case 52:
             this.l25 = ((System.Windows.Controls.Label)(target));
             return;
-            case 54:
+            case 53:
             this.lbl_f_no = ((System.Windows.Controls.Label)(target));
             return;
-            case 55:
+            case 54:
             this.l8 = ((System.Windows.Controls.Label)(target));
             return;
-            case 56:
+            case 55:
             this.l23 = ((System.Windows.Controls.Label)(target));
             return;
-            case 57:
+            case 56:
             this.l22 = ((System.Windows.Controls.Label)(target));
             return;
-            case 58:
+            case 57:
             this.lbl_n_name = ((System.Windows.Controls.Label)(target));
             return;
-            case 59:
+            case 58:
             this.lbl_n_no = ((System.Windows.Controls.Label)(target));
             return;
-            case 60:
+            case 59:
             this.textblock_n_address = ((System.Windows.Controls.TextBlock)(target));
             return;
-            case 61:
+            case 60:
             this.lbl_start_date = ((System.Windows.Controls.Label)(target));
             return;
-            case 62:
+            case 61:
             this.lbl_finish_date = ((System.Windows.Controls.Label)(target));
             return;
-            case 63:
+            case 62:
             this.lbl_today_date = ((System.Windows.Controls.Label)(target));
             return;
-            case 64:
+            case 63:
             this.lbl_payment = ((System.Windows.Controls.Label)(target));
             return;
-            case 65:
+            case 64:
             this.lbl_payment_date = ((System.Windows.Controls.Label)(target));
             return;
-            case 66:
+            case 65:
             this.lbl_txt = ((System.Windows.Controls.Label)(target));
             return;
-            case 67:
+            case 66:
             this.lbl_day = ((System.Windows.Controls.Label)(target));
             return;
-            case 68:
+            case 67:
             this.lbl_day_c = ((System.Windows.Controls.Label)(target));
             return;
-            case 69:
+            case 68:
             this.lbl_vat = ((System.Windows.Controls.Label)(target));
             return;
-            case 70:
+            case 69:
             this.lbl_netto = ((System.Windows.Controls.Label)(target));
             return;
-            case 71:
+            case 70:
             this.lbl_brutto = ((System.Windows.Controls.Label)(target));
             return;
-            case 72:
+            case 71:
             this.btn_clear = ((System.Windows.Controls.Button)(target));
             
-            #line 152 "..\..\..\win_finance\finance_window.xaml"
+            #line 151 "..\..\..\win_finance\finance_window.xaml"
             this.btn_clear.Click += new System.Windows.RoutedEventHandler(this.Btn_clear_Click);
             
             #line default
             #line hidden
             return;
-            case 73:
+            case 72:
             this.lbl_time1 = ((System.Windows.Controls.Label)(target));
+            return;
+            case 73:
+            this.btn_add_f = ((System.Windows.Controls.Button)(target));
+            
+            #line 153 "..\..\..\win_finance\finance_window.xaml"
+            this.btn_add_f.Click += new System.Windows.RoutedEventHandler(this.Btn_add_f_Click);
+            
+            #line default
+            #line hidden
             return;
             }
             this._contentLoaded = true;
