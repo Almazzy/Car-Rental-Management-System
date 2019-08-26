@@ -141,7 +141,8 @@ namespace carRental.win_finance
 
         private void Btn_add_f_Click(object sender, RoutedEventArgs e)
         {
-
+            add_new_inv_window aniw = new add_new_inv_window();
+            aniw.ShowDialog();
         }
 
         //--================================================================--

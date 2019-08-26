@@ -19,8 +19,11 @@ namespace carRental.other
     /// <summary>
     /// Logika interakcji dla klasy login_window.xaml
     /// </summary>
+    /// 
     public partial class login_window : Window
     {
+        public int box;
+
         public login_window()
         {
             InitializeComponent();
@@ -29,22 +32,17 @@ namespace carRental.other
         private void Btn_login_Click(object sender, RoutedEventArgs e)
         {
             connection.openConnection();
-
             connection.sql = "SELECT COUNT(1) FROM UserTb WHERE login=@login AND password=@password";
-
             connection.cmd.CommandType = CommandType.Text;
-
             connection.cmd.CommandText = connection.sql;
-
             connection.cmd.Parameters.AddWithValue("@login", txt_login.Text);
-
             connection.cmd.Parameters.AddWithValue("@password", txt_password.Password);
 
             int count = Convert.ToInt32(connection.cmd.ExecuteScalar());
 
             if (count == 1)
             {
-
+                Get_Emp();
                 win_rentals.rentals_window rw = new win_rentals.rentals_window();
 
                 this.Close();
@@ -68,6 +66,16 @@ namespace carRental.other
 
             this.Close();
             rw.ShowDialog();
+        }
+
+        private void Get_Emp()
+        {
+            connection.openConnection();
+            connection.sql = "SELECT Id_Pracownika FROM Pracownicy p, UserTb t WHERE p.Id_User = t.Id_User AND t.login = '" + txt_login.Text + "' + AND t.password = '" + txt_password.Password + "'";
+            connection.cmd.CommandType = CommandType.Text;
+            connection.cmd.CommandText = connection.sql;
+            box = (int)connection.cmd.ExecuteScalar();
+            connection.closeConnection();
         }
     }
 }

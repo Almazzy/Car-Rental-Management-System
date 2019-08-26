@@ -55,10 +55,10 @@ namespace carRental.win_rentals
 
                         connection.openConnection();
                         connection.sql = "INSERT INTO Wynajmy(Id_Klienta, Id_Samochodu, Id_Cennika, nr_zlecenia, " +
-                            "typ_wynajmu, data_wydania, miejsce_wydania, data_odbioru, miejsce_odbioru, Id_Prac_Odp) " +
+                            "typ_wynajmu, data_wydania, miejsce_wydania, data_odbioru, miejsce_odbioru, Id_Prac_Odp, faktura) " +
                             "values ('" + cus_id + "','" + car_id + "','" + pri_id + "','" + txt_number.Text + "','" +
                             txt_type.Text + "','" + date1 + "','" + txt_where_w.Text +
-                            "','" + date2 + "','" + txt_where_o.Text + "','" + emp_id + "')";
+                            "','" + date2 + "','" + txt_where_o.Text + "','" + emp_id + "','brak')";
                         connection.cmd.CommandType = CommandType.Text;
                         connection.cmd.CommandText = connection.sql;
                         connection.cmd.ExecuteNonQuery();

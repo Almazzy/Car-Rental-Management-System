@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:carRental.win_finance"
         mc:Ignorable="d"
-        Title=" e-carRent - stwórz fakturę" Height="600.5" Width="1032.667" WindowStyle="ToolWindow" Background="#FFE8E8E8"
+        Title=" e-carRent - stwórz fakturę" Height="533" Width="1032.667" WindowStyle="ToolWindow" Background="#FFE8E8E8"
         ResizeMode="CanResizeWithGrip" >
     <Grid Margin="0,0,-8,0">
         <Grid.ColumnDefinitions>
@@ -13,10 +13,10 @@
         </Grid.ColumnDefinitions>
         <Rectangle Fill="#FFD8D8D8" Height="122" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1026"/>
 
-        <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="63" Stroke="Black" VerticalAlignment="Top" Width="1026" Margin="0,507,0,0"/>
+        <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="63" Stroke="Black" VerticalAlignment="Top" Width="1025" Margin="0,441,0,-1"/>
         <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="644" Margin="20,22,0,0"/>
         <Rectangle Fill="#FFCB99C5" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="307" Margin="704,22,0,0"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="157,311,0,0" VerticalAlignment="Top" Width="368" RenderTransformOrigin="0.5,0.5" Background="Black">
+        <Separator HorizontalAlignment="Left" Height="26" Margin="190,278,0,0" VerticalAlignment="Top" Width="302" RenderTransformOrigin="0.5,0.5" Background="Black">
             <Separator.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,7 +26,7 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <Separator HorizontalAlignment="Left" Height="28" Margin="501,309,0,0" VerticalAlignment="Top" Width="368" RenderTransformOrigin="0.5,0.5" Background="Black">
+        <Separator HorizontalAlignment="Left" Height="28" Margin="534,276,0,0" VerticalAlignment="Top" Width="302" RenderTransformOrigin="0.5,0.5" Background="Black">
             <Separator.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -40,10 +40,9 @@
         <Rectangle Fill="#FFCB99C5" HorizontalAlignment="Left" Height="18" Margin="684,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="342"/>
         <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="18" Margin="342,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="342"/>
         <TextBox x:Name="txt_no" HorizontalAlignment="Left" Height="31" Margin="20,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
-        <TextBox x:Name="txt_mark" HorizontalAlignment="Left" Height="30" Margin="20,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
-        <TextBox x:Name="txt_model" HorizontalAlignment="Left" Height="31" Margin="20,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
+        <TextBox x:Name="txt_day" HorizontalAlignment="Left" Height="30" Margin="20,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
         <Label Content="nr faktury:" HorizontalAlignment="Left" Margin="17,172,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="142"/>
-        <ComboBox x:Name="combo_fuel" HorizontalAlignment="Left" Margin="704,184,0,0" VerticalAlignment="Top" Width="307" BorderBrush="White" Height="31" FontSize="16">
+        <ComboBox x:Name="combo_no" HorizontalAlignment="Left" Margin="704,210,0,0" VerticalAlignment="Top" Width="307" BorderBrush="White" Height="31" FontSize="16" SelectionChanged="Combo_no_SelectionChanged">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -52,21 +51,18 @@
             </ComboBox.Background>
 
         </ComboBox>
-        <TextBox x:Name="txt_engine" HorizontalAlignment="Left" Height="190" Margin="357,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="307" FontSize="16"/>
-        <Label Content="sposób płatności:" HorizontalAlignment="Left" Margin="17,250,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="186"/>
+        <TextBox x:Name="txt_txt" HorizontalAlignment="Left" Height="116" Margin="362,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
+        <Label Content="sposób płatności:" HorizontalAlignment="Left" Margin="17,250,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="152"/>
         <Separator HorizontalAlignment="Left" Height="26" Margin="21,184,0,0" VerticalAlignment="Top" Width="65" Background="#FF9ABF7F"/>
         <Separator HorizontalAlignment="Left" Height="26" Margin="21,262,0,0" VerticalAlignment="Top" Width="113" Background="#FF9ABF7F"/>
-        <Label Content="usługa:" HorizontalAlignment="Left" Margin="352,172,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="119"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="357,184,0,0" VerticalAlignment="Top" Width="33" Background="#FF9ABF7F"/>
+        <Label Content="usługa:" HorizontalAlignment="Left" Margin="357,250,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="119"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="362,262,0,0" VerticalAlignment="Top" Width="44" Background="#FF9ABF7F"/>
         <Label HorizontalContentAlignment="Center" Content="Podstawowe dane faktury" HorizontalAlignment="Left" Margin="20,53,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT" Width="644"/>
         <Label HorizontalContentAlignment="Center" Content="NAJEMCA &amp; ZLECENIE" HorizontalAlignment="Left" Margin="704,53,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT" Width="298"/>
-        <Label Content="2" HorizontalAlignment="Left" Margin="664,118,0,0" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="Perpetua Titling MT" Width="20" Height="28"/>
-        <Label Content="3" HorizontalAlignment="Left" Margin="1002,118,0,0" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="Perpetua Titling MT" Width="20" Height="28"/>
-        <Label Content="1" HorizontalAlignment="Left" Margin="324,118,0,0" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="Perpetua Titling MT" Width="18" Height="28"/>
-        <Label Content="*wszystkie pola muszą być uzupełnione." HorizontalAlignment="Left" Margin="843,515,0,0" VerticalAlignment="Top" Foreground="White" FontSize="9"/>
+        <Label Content="*wszystkie pola muszą być uzupełnione." HorizontalAlignment="Left" Margin="843,449,0,0" VerticalAlignment="Top" Foreground="White" FontSize="9"/>
 
-        <Image Source="/carRental;component/pic/addb.png" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="50" Margin="8,515,0,0"/>
-        <Separator HorizontalAlignment="Left" Height="14" Margin="31,528,0,0" VerticalAlignment="Top" Width="46" Background="White" RenderTransformOrigin="0.5,0.5">
+        <Image Source="/carRental;component/pic/addb.png" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="50" Margin="8,449,0,0"/>
+        <Separator HorizontalAlignment="Left" Height="14" Margin="31,462,0,0" VerticalAlignment="Top" Width="46" Background="White" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -79,29 +75,41 @@
 
         <Label Content="suma dni:" HorizontalAlignment="Left" Margin="17,332,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
         <Separator HorizontalAlignment="Left" Height="26" Margin="21,344,0,0" VerticalAlignment="Top" Width="62" Background="#FF9ABF7F"/>
-        <Label Content="nr zlecenia:" HorizontalAlignment="Left" Margin="704,145,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="709,158,0,0" VerticalAlignment="Top" Width="43" Background="#FF9ABF7F"/>
+        <Label Content="nr zlecenia:" HorizontalAlignment="Left" Margin="699,171,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="704,184,0,0" VerticalAlignment="Top" Width="74" Background="#FFCB99C5"/>
 
 
-        <Label Content="termin płatności:" HorizontalAlignment="Left" Margin="17,410,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="21,423,0,0" VerticalAlignment="Top" Width="107" Background="#FF9ABF7F"/>
+        <Label Content="termin płatności:" HorizontalAlignment="Left" Margin="358,171,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="362,184,0,0" VerticalAlignment="Top" Width="107" Background="#FF9ABF7F"/>
 
-        <Label Content="nr rejestracyjny:" HorizontalAlignment="Left" Margin="704,222,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="119"/>
-        <Label Content="marka:" HorizontalAlignment="Left" Margin="704,272,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="63" Height="28"/>
-        <Label Content="model:" HorizontalAlignment="Left" Margin="704,319,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="65"/>
-        <Label HorizontalContentAlignment="Center" x:Name="lbl_p_start" Content="-" HorizontalAlignment="Left" Margin="828,222,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="174"/>
-        <Label HorizontalContentAlignment="Center" x:Name="lbl_p_end" Content="-" HorizontalAlignment="Left" Margin="828,272,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="174"/>
-        <Label Content="najemca:" HorizontalAlignment="Left" Margin="703,366,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="95"/>
-        <Label HorizontalContentAlignment="Center" x:Name="lbl_o_start" Content="-" HorizontalAlignment="Left" Margin="837,366,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="174" Height="86"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="710,235,0,0" VerticalAlignment="Top" Width="49" Background="#FFCB99C5"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="710,283,0,0" VerticalAlignment="Top" Width="49" Background="#FFCB99C5"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="709,332,0,0" VerticalAlignment="Top" Width="48" Background="#FFCB99C5"/>
-        <Separator HorizontalAlignment="Left" Height="25" Margin="709,379,0,0" VerticalAlignment="Top" Width="50" Background="#FFCB99C5"/>
-        <TextBlock x:Name="txtb_p_txt" HorizontalAlignment="Left" Margin="828,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="28" FontFamily="Rockwell Nova Cond" FontSize="14"/>
-        <Button x:Name="btn_add" HorizontalAlignment="Left" Margin="362,515,0,0" VerticalAlignment="Top" Width="302" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="S T W Ó R Z  F A K T U R Ę" Foreground="White" FontSize="18" Click="Btn_add_Click"/>
-        <Button x:Name="btn_exit" HorizontalAlignment="Left" Margin="61,515,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FFBF7F7F" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="anuluj" Foreground="White" Click="Btn_exit_Click"/>
-        <Button x:Name="btn_refresh" HorizontalAlignment="Left" Margin="136,515,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="ODŚWIEŻ" Foreground="White" Click="Btn_refresh_Click"/>
-        <ComboBox x:Name="combo_fuel_Copy" HorizontalAlignment="Left" Margin="20,288,0,0" VerticalAlignment="Top" Width="302" BorderBrush="White" Height="32" FontSize="16">
+        <Label Content="nr rejestracyjny:" HorizontalAlignment="Left" Margin="704,247,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="119"/>
+        <Label Content="marka:" HorizontalAlignment="Left" Margin="704,297,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="63" Height="28"/>
+        <Label Content="model:" HorizontalAlignment="Left" Margin="704,344,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="65"/>
+        <Label HorizontalContentAlignment="Center" x:Name="l1" Content="-" HorizontalAlignment="Left" Margin="818,247,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="184"/>
+        <Label HorizontalContentAlignment="Center" x:Name="l2" Content="-" HorizontalAlignment="Left" Margin="818,297,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="184"/>
+        <Label Content="najemca:" HorizontalAlignment="Left" Margin="703,391,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="95"/>
+        <Label HorizontalContentAlignment="Center" x:Name="l4" Content="          -" HorizontalAlignment="Left" Margin="769,391,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="242" Height="28"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="710,260,0,0" VerticalAlignment="Top" Width="103" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="710,308,0,0" VerticalAlignment="Top" Width="41" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="709,357,0,0" VerticalAlignment="Top" Width="42" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="25" Margin="709,404,0,0" VerticalAlignment="Top" Width="55" Background="#FFCB99C5"/>
+        <Button x:Name="btn_create" HorizontalAlignment="Left" Margin="362,449,0,0" VerticalAlignment="Top" Width="302" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="S T W Ó R Z  F A K T U R Ę" Foreground="White" FontSize="18" Click="Btn_add_Click"/>
+        <Button x:Name="btn_exit" HorizontalAlignment="Left" Margin="61,449,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FFBF7F7F" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="anuluj" Foreground="White" Click="Btn_exit_Click"/>
+        <Button x:Name="btn_refresh" HorizontalAlignment="Left" Margin="136,449,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="ODŚWIEŻ" Foreground="White" Click="Btn_refresh_Click"/>
+        <ComboBox x:Name="combo_payment" HorizontalAlignment="Left" Margin="20,288,0,0" VerticalAlignment="Top" Width="149" BorderBrush="White" Height="32" FontSize="16">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+
+        </ComboBox>
+        <DatePicker x:Name="date_payment" HorizontalAlignment="Left" Margin="362,210,0,0" VerticalAlignment="Top" Width="302" Height="31"/>
+        <Label HorizontalContentAlignment="Center" x:Name="l3" Content="-" HorizontalAlignment="Left" Margin="818,344,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Cond" Width="184"/>
+        <Label Content="pracownik odp:" HorizontalAlignment="Left" Margin="171,250,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="151"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="174,262,0,0" VerticalAlignment="Top" Width="103" Background="#FF9ABF7F"/>
+        <ComboBox x:Name="combo_emp" HorizontalAlignment="Left" Margin="174,288,0,0" VerticalAlignment="Top" Width="148" BorderBrush="White" Height="32" FontSize="16">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
