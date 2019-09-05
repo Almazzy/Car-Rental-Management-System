@@ -44,6 +44,8 @@ namespace carRental.win_customers
             open_Window();
         }
 
+        // ============================================================================================================== \\
+
         private void Btn_rentals_Click(object sender, RoutedEventArgs e)
         {
             rentals_window rw = new rentals_window();
@@ -89,23 +91,40 @@ namespace carRental.win_customers
             this.Close();
             ew.ShowDialog();
         }
-        // --------------------------------
+
+        // ============================================================================================================== \\
 
         private void Btn_ind_Click(object sender, RoutedEventArgs e)
         {
-            click_buttons_background(240, 210, 100, 232, 232, 232, 232, 232, 232, 255, 255, 255, 112, 112, 112);
-            click_buttons2(255, 255, 255, 112, 112, 112);
-            click_buttons3("/carRental;component/pic/1pb.png", "/carRental;component/pic/wpc.png");
-            show_table("WHERE typ_klienta='indywidualny'");
+            try
+            {
+                click_buttons_background(240, 210, 100, 232, 232, 232, 232, 232, 232, 255, 255, 255, 112, 112, 112);
+                click_buttons2(255, 255, 255, 112, 112, 112);
+                click_buttons3("/carRental;component/pic/1pb.png", "/carRental;component/pic/wpc.png");
+                show_table("WHERE typ_klienta='indywidualny'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_com_Click(object sender, RoutedEventArgs e)
         {
-            click_buttons_background(232, 232, 232, 240, 210, 100, 232, 232, 232, 112, 112, 112, 255, 255, 255);
-            click_buttons2(112, 112, 112, 255, 255, 255);
-            click_buttons3("/carRental;component/pic/1pc.png", "/carRental;component/pic/wpb.png");
-            show_table("WHERE typ_klienta='firma'");
+            try
+            {
+                click_buttons_background(232, 232, 232, 240, 210, 100, 232, 232, 232, 112, 112, 112, 255, 255, 255);
+                click_buttons2(112, 112, 112, 255, 255, 255);
+                click_buttons3("/carRental;component/pic/1pc.png", "/carRental;component/pic/wpb.png");
+                show_table("WHERE typ_klienta='firma'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
+
+        // ============================================================================================================== \\
 
         private void open_Window()
         {
@@ -152,7 +171,7 @@ namespace carRental.win_customers
         void click_buttons_background(byte c1, byte c2, byte c3, byte c4, byte c5, byte c6, byte c7, byte c8, byte c9, byte o1, byte o2, byte o3, byte o4, byte o5, byte o6)
         {
             btn_ind.Background = new SolidColorBrush(Color.FromRgb(c1, c2, c3));
-            btn_com.Background = new SolidColorBrush(Color.FromRgb(c4, c5, c6));          
+            btn_com.Background = new SolidColorBrush(Color.FromRgb(c4, c5, c6));
 
             btn_ind.Foreground = new SolidColorBrush(Color.FromRgb(o1, o2, o3));
             btn_com.Foreground = new SolidColorBrush(Color.FromRgb(o4, o5, o6));
@@ -169,6 +188,8 @@ namespace carRental.win_customers
             im1.Source = new BitmapImage(new Uri(i1, UriKind.Relative));
             im2.Source = new BitmapImage(new Uri(i2, UriKind.Relative));
         }
+
+        // ============================================================================================================== \\
 
         void load_count_ind()
         {
@@ -192,7 +213,7 @@ namespace carRental.win_customers
             lbl_com.Content = Convert.ToInt32(count);
         }
 
-        //search in datagrid;
+        // ============================================================================================================== \\
 
         private void Txt_s1_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -271,6 +292,8 @@ namespace carRental.win_customers
             dataGrid1.ItemsSource = DV;
         }
 
+        // ============================================================================================================== \\
+
         private void Btn_reload_Click(object sender, RoutedEventArgs e)
         {
             Timer.Tick += new EventHandler(Timer_Click);
@@ -279,6 +302,7 @@ namespace carRental.win_customers
 
 
             open_Window();
+            MessageBox.Show("Odświeżenie otwartej karty zostało zakończone sukcesem.", "Komunikat.");
         }
 
         private void Btn_logout_Click(object sender, RoutedEventArgs e)
@@ -287,6 +311,6 @@ namespace carRental.win_customers
             lw.ShowDialog();
         }
 
-       
+
     }
 }

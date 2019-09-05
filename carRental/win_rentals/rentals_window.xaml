@@ -81,9 +81,6 @@
         <TextBox x:Name="txt_s10" HorizontalAlignment="Left" Height="23" Margin="1593,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" TextChanged="Txt_s10_TextChanged"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="1855,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="18"/>
         <Label x:Name="lbl_time1" Content="" HorizontalAlignment="Left" Margin="10,984,0,0" HorizontalContentAlignment="Left" VerticalAlignment="Top" Foreground="White" Width="286"/>
-        <Button HorizontalAlignment="Left" Margin="1449,920,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553">
-            <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
-        </Button>
         <Button x:Name="btn_add_1" HorizontalAlignment="Left" Margin="1629,920,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dodaj nowy wynajem" Click="Btn_add_1_Click">
             <Image Source="/carRental;component/pic/f8.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
         </Button>
@@ -97,9 +94,9 @@
             <Image Source="/carRental;component/pic/f5.png" HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="50"/>
         </Button>
         <Button x:Name="btn_overview" Content="     Polisy &amp;&#xA;    Przęglądy" HorizontalAlignment="Left" Margin="730,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFA69FC7" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_overview_Click" />
-        <Button x:Name="btn_finance" Content="   Finanse" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance" />
+        <Button x:Name="btn_finance" Content="   Faktury" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance" />
         <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="40" Margin="740,74,0,0" VerticalAlignment="Top" Width="48"/>
-        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/inv/invib.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Separator HorizontalAlignment="Left" Height="16" Margin="71,552,0,0" VerticalAlignment="Top" Width="279"/>
         <Separator HorizontalAlignment="Left" Height="16" Margin="-285,560,0,0" VerticalAlignment="Top" Width="682" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>

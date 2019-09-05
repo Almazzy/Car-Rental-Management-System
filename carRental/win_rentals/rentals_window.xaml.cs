@@ -42,7 +42,7 @@ namespace carRental.win_rentals
             open_Window();
         }
 
-        //functions:
+        // ============================================================================================================== \\
 
         void load_count_ongoing()
         {
@@ -78,6 +78,8 @@ namespace carRental.win_rentals
             lbl_reservations.Content = Convert.ToString(count);
         }
 
+        // ============================================================================================================== \\
+
         void click_buttons_background(byte c1, byte c2, byte c3, byte c4, byte c5, byte c6, byte c7, byte c8, byte c9, byte o1, byte o2, byte o3, byte o4, byte o5, byte o6, byte o7, byte o8, byte o9)
         {
             btn_ongoing.Background = new SolidColorBrush(Color.FromRgb(c1, c2, c3));
@@ -96,7 +98,8 @@ namespace carRental.win_rentals
             lbl_reservations.Foreground = new SolidColorBrush(Color.FromRgb(o7, o8, o9));
         }
 
-        void buttons_image_source(string i1, string i2, string i3) {
+        void buttons_image_source(string i1, string i2, string i3)
+        {
             im1.Source = new BitmapImage(new Uri(i1, UriKind.Relative));
             im2.Source = new BitmapImage(new Uri(i2, UriKind.Relative));
             im3.Source = new BitmapImage(new Uri(i3, UriKind.Relative));
@@ -136,11 +139,12 @@ namespace carRental.win_rentals
             d = DateTime.Now;
             DateTime dateValue = new DateTime(DateTime.Now.Day);
             lbl_time1.Content = d.Hour + " : " + d.Minute + " : " + d.Second + "   " + d.Day + " / " + d.Month + " / " + d.Year;
-           
+
             //lbl_day.Content = dateValue.ToString("dddd", new CultureInfo("pl-PL"));
         }
 
-        private void open_Window() {
+        private void open_Window()
+        {
             load_count_ongoing();
             load_count_completed();
             load_count_reservations();
@@ -150,35 +154,54 @@ namespace carRental.win_rentals
             show_table("AND data_odbioru > GETDATE() AND data_wydania < GETDATE()");
         }
 
-        // button rentals:
+        // ============================================================================================================== \\
 
         private void Btn_ongoing_Click(object sender, RoutedEventArgs e)
         {
-            click_buttons_background(154, 191, 127, 232, 232, 232, 232, 232, 232, 255, 255, 255, 112, 112, 112, 112, 112, 112);
-            click_lbl_freground(255, 255, 255, 112, 112, 112, 112, 112, 112);
-            buttons_image_source("/carRental;component/pic/cal1b.png", "/carRental;component/pic/cal3.png", "/carRental;component/pic/cal2.png");
-            show_table("AND data_odbioru > GETDATE() AND data_wydania < GETDATE()");
-
+            try
+            {
+                click_buttons_background(154, 191, 127, 232, 232, 232, 232, 232, 232, 255, 255, 255, 112, 112, 112, 112, 112, 112);
+                click_lbl_freground(255, 255, 255, 112, 112, 112, 112, 112, 112);
+                buttons_image_source("/carRental;component/pic/cal1b.png", "/carRental;component/pic/cal3.png", "/carRental;component/pic/cal2.png");
+                show_table("AND data_odbioru > GETDATE() AND data_wydania < GETDATE()");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_completed_Click(object sender, RoutedEventArgs e)
         {
-            click_buttons_background(232, 232, 232, 154, 191, 127, 232, 232, 232, 112, 112, 112, 255, 255, 255, 112, 112, 112);
-            click_lbl_freground(112, 112, 112, 255, 255, 255, 112, 112, 112);
-            buttons_image_source("/carRental;component/pic/cal1.png", "/carRental;component/pic/cal3b.png", "/carRental;component/pic/cal2.png");
-            show_table("AND data_odbioru < GETDATE()");
+            try
+            {
+                click_buttons_background(232, 232, 232, 154, 191, 127, 232, 232, 232, 112, 112, 112, 255, 255, 255, 112, 112, 112);
+                click_lbl_freground(112, 112, 112, 255, 255, 255, 112, 112, 112);
+                buttons_image_source("/carRental;component/pic/cal1.png", "/carRental;component/pic/cal3b.png", "/carRental;component/pic/cal2.png");
+                show_table("AND data_odbioru < GETDATE()");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_reservations_Click(object sender, RoutedEventArgs e)
         {
-            click_buttons_background(232, 232, 232, 232, 232, 232, 154, 191, 127, 112, 112, 112, 112, 112, 112, 255, 255, 255);
-            click_lbl_freground(112, 112, 112, 112, 112, 112, 255, 255, 255);
-            buttons_image_source("/carRental;component/pic/cal1.png", "/carRental;component/pic/cal3.png", "/carRental;component/pic/cal2b.png");
-            show_table("AND data_wydania > GETDATE()");
+            try
+            {
+                click_buttons_background(232, 232, 232, 232, 232, 232, 154, 191, 127, 112, 112, 112, 112, 112, 112, 255, 255, 255);
+                click_lbl_freground(112, 112, 112, 112, 112, 112, 255, 255, 255);
+                buttons_image_source("/carRental;component/pic/cal1.png", "/carRental;component/pic/cal3.png", "/carRental;component/pic/cal2b.png");
+                show_table("AND data_wydania > GETDATE()");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
-
-        // button nav:
+        // ============================================================================================================== \\
 
         private void Btn_rentals_Click(object sender, RoutedEventArgs e)
         {
@@ -220,7 +243,7 @@ namespace carRental.win_rentals
             ew.ShowDialog();
         }
 
-        //--------------------------------------------------
+        // ============================================================================================================== \\
 
         private void Btn_add_1_Click(object sender, RoutedEventArgs e)
         {
@@ -247,8 +270,7 @@ namespace carRental.win_rentals
             mw.ShowDialog();
         }
 
-
-        //search in datagrid;
+        // ============================================================================================================== \\
 
         private void Txt_s1_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -295,7 +317,7 @@ namespace carRental.win_rentals
         private void Txt_s7_TextChanged(object sender, TextChangedEventArgs e)
         {
             DataView DV = new DataView(wynajem);
-            DV.RowFilter = string.Concat("CONVERT(", "data_wydania", ",System.String) LIKE '%", txt_s7.Text , "%'");
+            DV.RowFilter = string.Concat("CONVERT(", "data_wydania", ",System.String) LIKE '%", txt_s7.Text, "%'");
             dataGrid1.ItemsSource = DV;
         }
 
@@ -327,6 +349,8 @@ namespace carRental.win_rentals
             dataGrid1.ItemsSource = DV;
         }
 
+        // ============================================================================================================== \\
+
         private void Btn_reload_Click(object sender, RoutedEventArgs e)
         {
             InitializeComponent();
@@ -335,6 +359,7 @@ namespace carRental.win_rentals
             Timer.Start();
 
             open_Window();
+            MessageBox.Show("Odświeżenie otwartej karty zostało zakończone sukcesem.", "Komunikat.");
         }
 
         private void Btn_logout_Click(object sender, RoutedEventArgs e)
@@ -343,7 +368,7 @@ namespace carRental.win_rentals
             lw.ShowDialog();
         }
 
-        
+
     }
 
 }

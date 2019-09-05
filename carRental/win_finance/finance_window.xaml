@@ -41,9 +41,9 @@
         <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="276,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Image Source="/carRental;component/pic/car.png" HorizontalAlignment="Left" Height="40" Margin="508,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Button x:Name="btn_overview" Content="     Polisy &amp;&#xA;    Przęglądy" HorizontalAlignment="Left" Margin="730,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFA69FC7" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_overview_Click" />
-        <Button x:Name="btn_finance" Content="   Finanse" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click" />
+        <Button x:Name="btn_finance" Content="   Faktury" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click" />
         <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="40" Margin="740,74,0,0" VerticalAlignment="Top" Width="48"/>
-        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/inv/invib.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Separator HorizontalAlignment="Left" Height="100" Margin="1032,57,0,0" VerticalAlignment="Top" Width="72" Background="White"/>
         <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
             <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
@@ -100,13 +100,13 @@
         <TextBox x:Name="txt_s8" HorizontalAlignment="Left" Height="23" Margin="1072,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <TextBox x:Name="txt_s9" HorizontalAlignment="Left" Height="23" Margin="1172,333,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btn_all_invoices" Content="&#xA;&#xA;&#xA;          wszystkie faktury" HorizontalAlignment="Left" Margin="64,193,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_invoice_Click" />
-        <Image x:Name="im1" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="74,211,0,0" VerticalAlignment="Top" Width="62"/>
+        <Image x:Name="im1" Source="/carRental;component/pic/inv/invas.png" HorizontalAlignment="Left" Height="74" Margin="73,207,0,0" VerticalAlignment="Top" Width="75"/>
         <Label x:Name="lbl_all_invoices" Content="" HorizontalAlignment="Left" Margin="254,178,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
         <Button x:Name="btn_c_invoices" Content="&#xA;&#xA;          faktury klientów&#xD;&#xA;          indywidualnych" HorizontalAlignment="Left" Margin="515,193,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_c_invoices_Click" />
-        <Image x:Name="im2" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="525,211,0,0" VerticalAlignment="Top" Width="62"/>
+        <Image x:Name="im2" Source="/carRental;component/pic/inv/invis.png" HorizontalAlignment="Left" Height="76" Margin="524,205,0,0" VerticalAlignment="Top" Width="79"/>
         <Label x:Name="lbl_c_invoices" Content="" HorizontalAlignment="Left" Margin="705,178,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
         <Button x:Name="btn_b_invoices" Content="&#xA;&#xA;          faktury klientów&#xD;&#xA;          biznesowych" HorizontalAlignment="Left" Margin="966,193,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_b_invoices_Click" />
-        <Image x:Name="im3" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="976,211,0,0" VerticalAlignment="Top" Width="62"/>
+        <Image x:Name="im3" Source="/carRental;component/pic/inv/invbs.png" HorizontalAlignment="Left" Height="76" Margin="974,205,0,0" VerticalAlignment="Top" Width="78"/>
         <Label x:Name="lbl_b_invoices" Content="" HorizontalAlignment="Left" Margin="1156,178,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
         <Label x:Name="l1" Content="Wynajmujący:" HorizontalAlignment="Left" Margin="1336,221,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>
         <Label x:Name="l7" Content="Najemca:" HorizontalAlignment="Left" Margin="1806,219,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei"/>

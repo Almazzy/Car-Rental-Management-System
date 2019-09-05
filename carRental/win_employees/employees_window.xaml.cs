@@ -42,7 +42,7 @@ namespace carRental.win_employees
             open_Window();
         }
 
-        // =====
+        // ============================================================================================================== \\
 
         private void Btn_rentals_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +84,7 @@ namespace carRental.win_employees
             //im here
         }
 
-        // ===
+        // ============================================================================================================== \\
 
         private void Timer_Click(object sender, EventArgs e)
         {
@@ -118,7 +118,36 @@ namespace carRental.win_employees
             connection.closeConnection();
         }
 
-        private void open_Window() {
+        void buttons_click_colors(Button b1, Button b2, Button b3, Button b4, Button b5, Label l1, Label l2,
+           Label l3, Label l4, Label l5, string i1, string i2, string i3, string i4, string i5)
+        {
+            b1.Background = new SolidColorBrush(Color.FromRgb(127, 177, 191));
+            b2.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
+            b3.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
+            b4.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
+            b5.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
+
+            b1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            b2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            b3.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            b4.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            b5.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+
+            l1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            l2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l3.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l4.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l5.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+
+            im1.Source = new BitmapImage(new Uri(i1, UriKind.Relative));
+            im2.Source = new BitmapImage(new Uri(i2, UriKind.Relative));
+            im3.Source = new BitmapImage(new Uri(i3, UriKind.Relative));
+            im4.Source = new BitmapImage(new Uri(i4, UriKind.Relative));
+            im5.Source = new BitmapImage(new Uri(i5, UriKind.Relative));
+        }
+
+        private void open_Window()
+        {
             load_count_all_w();
             load_count_all_nw();
             load_count_all_k();
@@ -129,47 +158,85 @@ namespace carRental.win_employees
                 "/carRental;component/pic/emp/ss.png", "/carRental;component/pic/emp/hs.png");
             show_table(" AND p.status = 'zatrudniony'");
         }
-        // ===
+
+        // ============================================================================================================== \\
 
         private void Btn_all_w_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_w, btn_all_nw, btn_all_k, btn_all_s, btn_all_h, lbl_all_w, lbl_all_nw, lbl_all_k, lbl_all_s, lbl_all_h,
+            try
+            {
+                buttons_click_colors(btn_all_w, btn_all_nw, btn_all_k, btn_all_s, btn_all_h, lbl_all_w, lbl_all_nw, lbl_all_k, lbl_all_s, lbl_all_h,
                 "/carRental;component/pic/emp/pzbb.png", "/carRental;component/pic/emp/zss.png", "/carRental;component/pic/emp/ws.png",
                 "/carRental;component/pic/emp/ss.png", "/carRental;component/pic/emp/hs.png");
-            show_table(" AND status = 'zatrudniony'");
+                show_table(" AND status = 'zatrudniony'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_all_nw_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_nw, btn_all_w, btn_all_k, btn_all_s, btn_all_h, lbl_all_nw, lbl_all_w, lbl_all_k, lbl_all_s, lbl_all_h,
+            try
+            {
+                buttons_click_colors(btn_all_nw, btn_all_w, btn_all_k, btn_all_s, btn_all_h, lbl_all_nw, lbl_all_w, lbl_all_k, lbl_all_s, lbl_all_h,
                 "/carRental;component/pic/emp/pzss.png", "/carRental;component/pic/emp/zbb.png", "/carRental;component/pic/emp/ws.png",
                 "/carRental;component/pic/emp/ss.png", "/carRental;component/pic/emp/hs.png");
-            show_table(" AND status = 'niezatrudniony'");
+                show_table(" AND status = 'niezatrudniony'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_all_k_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_k, btn_all_w, btn_all_nw, btn_all_s, btn_all_h, lbl_all_k, lbl_all_w, lbl_all_nw, lbl_all_s, lbl_all_h,
+            try
+            {
+                buttons_click_colors(btn_all_k, btn_all_w, btn_all_nw, btn_all_s, btn_all_h, lbl_all_k, lbl_all_w, lbl_all_nw, lbl_all_s, lbl_all_h,
                 "/carRental;component/pic/emp/pzss.png", "/carRental;component/pic/emp/zss.png", "/carRental;component/pic/emp/wb.png",
                 "/carRental;component/pic/emp/ss.png", "/carRental;component/pic/emp/hs.png");
-            show_table(" AND status = 'zatrudniony' AND stanowisko = 'kierowca'");
+                show_table(" AND status = 'zatrudniony' AND stanowisko = 'kierowca'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_all_s_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_s, btn_all_w, btn_all_nw, btn_all_k, btn_all_h, lbl_all_s, lbl_all_w, lbl_all_nw, lbl_all_k, lbl_all_h,
+            try
+            {
+                buttons_click_colors(btn_all_s, btn_all_w, btn_all_nw, btn_all_k, btn_all_h, lbl_all_s, lbl_all_w, lbl_all_nw, lbl_all_k, lbl_all_h,
                 "/carRental;component/pic/emp/pzss.png", "/carRental;component/pic/emp/zss.png", "/carRental;component/pic/emp/ws.png",
                 "/carRental;component/pic/emp/sb.png", "/carRental;component/pic/emp/hs.png");
-            show_table(" AND status = 'zatrudniony' AND stanowisko = 'specjalista'");
+                show_table(" AND status = 'zatrudniony' AND stanowisko = 'specjalista'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_all_h_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_h, btn_all_w, btn_all_nw, btn_all_k, btn_all_s, lbl_all_h, lbl_all_w, lbl_all_nw, lbl_all_k, lbl_all_s, 
+            try
+            {
+                buttons_click_colors(btn_all_h, btn_all_w, btn_all_nw, btn_all_k, btn_all_s, lbl_all_h, lbl_all_w, lbl_all_nw, lbl_all_k, lbl_all_s,
                 "/carRental;component/pic/emp/pzss.png", "/carRental;component/pic/emp/zss.png", "/carRental;component/pic/emp/ws.png",
                 "/carRental;component/pic/emp/ss.png", "/carRental;component/pic/emp/hb.png");
-            show_table(" AND status = 'zatrudniony' AND stanowisko = 'handlowiec'");
+                show_table(" AND status = 'zatrudniony' AND stanowisko = 'handlowiec'");
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
+
+        // ============================================================================================================== \\
 
         private void Btn_reload_Click(object sender, RoutedEventArgs e)
         {
@@ -179,6 +246,7 @@ namespace carRental.win_employees
 
 
             open_Window();
+            MessageBox.Show("Odświeżenie otwartej karty zostało zakończone sukcesem.", "Komunikat.");
         }
 
         private void Btn_logout_Click(object sender, RoutedEventArgs e)
@@ -186,7 +254,8 @@ namespace carRental.win_employees
             logout_window lw = new logout_window();
             lw.ShowDialog();
         }
-        //search in datagrid;
+
+        // ============================================================================================================== \\
 
         private void Txt_s1_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -242,7 +311,7 @@ namespace carRental.win_employees
             // :)
         }
 
-        // ==
+        // ============================================================================================================== \\
 
         void load_count_all_w()
         {
@@ -299,36 +368,7 @@ namespace carRental.win_employees
             lbl_all_h.Content = count;
         }
 
-        // ==
-
-
-        void buttons_click_colors(Button b1, Button b2, Button b3, Button b4, Button b5, Label l1, Label l2,
-           Label l3, Label l4, Label l5,  string i1, string i2, string i3, string i4, string i5)
-        {
-            b1.Background = new SolidColorBrush(Color.FromRgb(127, 177, 191));
-            b2.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
-            b3.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
-            b4.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
-            b5.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
-
-            b1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-            b2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            b3.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            b4.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            b5.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-
-            l1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-            l2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            l3.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            l4.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            l5.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-
-            im1.Source = new BitmapImage(new Uri(i1, UriKind.Relative));
-            im2.Source = new BitmapImage(new Uri(i2, UriKind.Relative));
-            im3.Source = new BitmapImage(new Uri(i3, UriKind.Relative));
-            im4.Source = new BitmapImage(new Uri(i4, UriKind.Relative));
-            im5.Source = new BitmapImage(new Uri(i5, UriKind.Relative));
-        }
+        // ============================================================================================================== \\
 
         private void Btn_add_e_Click(object sender, RoutedEventArgs e)
         {

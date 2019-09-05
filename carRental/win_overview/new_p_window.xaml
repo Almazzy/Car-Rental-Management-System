@@ -15,15 +15,15 @@
         <Label Content="    wprowadzanie&#xD;&#xA;nowego przegladu"  HorizontalAlignment="Left" Margin="104,36,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Perpetua Titling MT" Foreground="White" HorizontalContentAlignment="Center" Width="301" Height="70"/>
         <Label Content="wyszukaj warsztat wykonujący:" HorizontalAlignment="Left" Margin="35,154,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
         <ComboBox x:Name="combo_ser" HorizontalAlignment="Left" Margin="104,195,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="40,172,0,0" VerticalAlignment="Top" Width="235" Background="#FFA69FC7"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="40,172,0,0" VerticalAlignment="Top" Width="244" Background="#FFA69FC7"/>
         <DatePicker x:Name="date_do" HorizontalAlignment="Left" Margin="258,300,0,0" VerticalAlignment="Top" Width="147" SelectedDateFormat="Short" Height="24"/>
-        <Label Content="data od:" HorizontalAlignment="Left" Margin="35,261,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="40,279,0,0" VerticalAlignment="Top" Width="49" Background="#FFA69FC7"/>
-        <Label Content="data do:" HorizontalAlignment="Left" Margin="248,261,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="253,279,0,0" VerticalAlignment="Top" Width="50" Background="#FFA69FC7"/>
+        <Label Content="data od:" HorizontalAlignment="Left" Margin="40,261,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="45,279,0,0" VerticalAlignment="Top" Width="59" Background="#FFA69FC7"/>
+        <Label Content="data do:" HorizontalAlignment="Left" Margin="253,261,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="258,279,0,0" VerticalAlignment="Top" Width="59" Background="#FFA69FC7"/>
         <DatePicker x:Name="date_od" HorizontalAlignment="Left" Margin="45,300,0,0" VerticalAlignment="Top" Width="147" SelectedDateFormat="Short" Height="24"/>
         <Label Content="notatka:" HorizontalAlignment="Left" Margin="30,353,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="35,371,0,0" VerticalAlignment="Top" Width="50" Background="#FFA69FC7"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="35,371,0,0" VerticalAlignment="Top" Width="58" Background="#FFA69FC7"/>
         <TextBox x:Name="txt_text" HorizontalAlignment="Left" Height="106" Margin="104,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="18" FontFamily="Rockwell Nova Light"/>
         <Button x:Name="btn_add" Content="d o d a j  p r z e g l ą d" HorizontalAlignment="Left" Margin="104,512,0,0" VerticalAlignment="Top" Width="301" Height="42" Background="#FF7FB1BF" Foreground="White" FontSize="16" FontFamily="Rockwell Nova Light" Click="Btn_add_Click"/>
     </Grid>

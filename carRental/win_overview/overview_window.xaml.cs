@@ -40,6 +40,8 @@ namespace carRental.win_overview
             open_Window();
         }
 
+        // ============================================================================================================== \\
+
         private void Btn_rentals_Click(object sender, RoutedEventArgs e)
         {
             rentals_window rw = new rentals_window();
@@ -66,7 +68,6 @@ namespace carRental.win_overview
             //im here
         }
 
-
         private void Btn_finance_Click_1(object sender, RoutedEventArgs e)
         {
             finance_window fw = new finance_window();
@@ -81,10 +82,7 @@ namespace carRental.win_overview
             ew.ShowDialog();
         }
 
-
-        // -----------------------
-
-        //search in datagrid;
+        // ============================================================================================================== \\
 
         private void Txt_s1_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -149,117 +147,173 @@ namespace carRental.win_overview
             dataGrid1.ItemsSource = DV;
         }
 
-        // ((((((((((((((((((((((((((((((((((((((((
+        // ============================================================================================================== \\
 
         private void Btn_all_ub_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
-                lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_all_p, lbl_little_time_p, lbl_history_p, lbl_not_use_ub, lbl_not_use_p, 
+            try
+            {
+                buttons_click_colors(btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
+                lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_all_p, lbl_little_time_p, lbl_history_p, lbl_not_use_ub, lbl_not_use_p,
                 "/carRental;component/pic/um1b.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unps.png", 1);
-            show_table_ub(" AND data_do > GETDATE() AND status='zajeta' ",0);
+                show_table_ub(" AND data_do > GETDATE() AND status='zajeta' ", 0);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_little_time_ub_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_little_time_ub, btn_all_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
+            try
+            {
+                buttons_click_colors(btn_little_time_ub, btn_all_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
                 lbl_little_time_ub, lbl_all_ub, lbl_history_ub, lbl_all_p, lbl_little_time_p, lbl_history_p, lbl_not_use_ub, lbl_not_use_p,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2b.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unps.png", 1);
-            show_table_ub(" AND DATEPART(month, data_do) = DATEPART(month, GETDATE()) AND data_do > GETDATE() AND DATEPART(year, data_do) = DATEPART(year, GETDATE()) AND status='zajeta' ORDER BY po.data_do ",0);
+                show_table_ub(" AND DATEPART(month, data_do) = DATEPART(month, GETDATE()) AND data_do > GETDATE() AND DATEPART(year, data_do) = DATEPART(year, GETDATE()) AND status='zajeta' ORDER BY po.data_do ", 0);
 
-            int count3 = Convert.ToInt32(lbl_little_time_ub.Content);
-            if (count3 != 0)
+                int count3 = Convert.ToInt32(lbl_little_time_ub.Content);
+                if (count3 != 0)
+                {
+                    MessageBox.Show("Posiadasz polisy, których okres ważności niedługo się kończy.", "Ostrzeżenie");
+                }
+            }
+            catch
             {
-                MessageBox.Show("Posiadasz polisy, których okres ważności niedługo się kończy.", "Ostrzeżenie");
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
             }
         }
 
         private void Btn_history_ub_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_history_ub, btn_all_ub, btn_little_time_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
+            try
+            {
+                buttons_click_colors(btn_history_ub, btn_all_ub, btn_little_time_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
                 lbl_history_ub, lbl_all_ub, lbl_little_time_ub, lbl_all_p, lbl_little_time_p, lbl_history_p, lbl_not_use_ub, lbl_not_use_p,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3b.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unps.png", 1);
-            show_table_ub(" AND data_do < GETDATE() AND status='zajeta' ", 0);
+                show_table_ub(" AND data_do < GETDATE() AND status='zajeta' ", 0);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_not_use_ub_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_not_use_ub, btn_history_ub, btn_all_ub, btn_little_time_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_p,
+            try
+            {
+                buttons_click_colors(btn_not_use_ub, btn_history_ub, btn_all_ub, btn_little_time_ub, btn_all_p, btn_little_time_p, btn_history_p, btn_not_use_p,
                  lbl_not_use_ub, lbl_history_ub, lbl_all_ub, lbl_little_time_ub, lbl_all_p, lbl_little_time_p, lbl_history_p, lbl_not_use_p,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unpb.png", "/carRental;component/pic/unps.png", 1);
-            show_table_ub(" status='nieprzypisana' ", 1);
+                show_table_ub(" status='nieprzypisana' ", 1);
 
-            int count1 = Convert.ToInt32(lbl_not_use_ub.Content);
-            if (count1 != 0)
+                int count1 = Convert.ToInt32(lbl_not_use_ub.Content);
+                if (count1 != 0)
+                {
+                    MessageBox.Show("Posiadasz polisy, które nie są przypisane do żadnego samochodu.", "Ostrzeżenie");
+                }
+            }
+            catch
             {
-                MessageBox.Show("Posiadasz polisy, które nie są przypisane do żadnego samochodu.", "Ostrzeżenie");
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
             }
 
         }
 
-        // ))))))))))))))))))))))))))))))))))))))))
+        // ============================================================================================================== \\
 
         private void Btn_all_p_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_all_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
+            try
+            {
+                buttons_click_colors(btn_all_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_little_time_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
                 lbl_all_p, lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_little_time_p, lbl_history_p, lbl_not_use_ub, lbl_not_use_p,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1b.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unps.png", 2);
-            show_table_p(" AND data_doo > GETDATE() AND status='zajety' ",0);
+                show_table_p(" AND data_doo > GETDATE() AND status='zajety' ", 0);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_little_time_p_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_little_time_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
+            try
+            {
+                buttons_click_colors(btn_little_time_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_history_p, btn_not_use_ub, btn_not_use_p,
                 lbl_little_time_p, lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_all_p, lbl_history_p, lbl_not_use_ub, lbl_not_use_p,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2b.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unps.png", 2);
-            show_table_p(" AND DATEPART(month, data_doo) = DATEPART(month, GETDATE()) AND data_doo > GETDATE() AND DATEPART(year, data_doo) = DATEPART(year, GETDATE()) AND status='zajety' ORDER BY pr.data_doo",0);
+                show_table_p(" AND DATEPART(month, data_doo) = DATEPART(month, GETDATE()) AND data_doo > GETDATE() AND DATEPART(year, data_doo) = DATEPART(year, GETDATE()) AND status='zajety' ORDER BY pr.data_doo", 0);
 
-            int count4 = Convert.ToInt32(lbl_little_time_p.Content);
-            if (count4 != 0)
+                int count4 = Convert.ToInt32(lbl_little_time_p.Content);
+                if (count4 != 0)
+                {
+                    MessageBox.Show("Posiadasz przeglądy, których okres ważności niedługo się kończy.", "Ostrzeżenie");
+                }
+            }
+            catch
             {
-                MessageBox.Show("Posiadasz przeglądy, których okres ważności niedługo się kończy.", "Ostrzeżenie");
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
             }
         }
 
         private void Btn_history_p_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_history_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_not_use_ub, btn_not_use_p,
+            try
+            {
+                buttons_click_colors(btn_history_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_not_use_ub, btn_not_use_p,
               lbl_history_p, lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_all_p, lbl_little_time_p, lbl_not_use_ub, lbl_not_use_p,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3b.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unps.png", 2);
-            show_table_p(" AND data_doo < GETDATE() AND status='zajety' ",0);
+                show_table_p(" AND data_doo < GETDATE() AND status='zajety' ", 0);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_not_use_p_Click(object sender, RoutedEventArgs e)
         {
-            buttons_click_colors(btn_not_use_p, btn_history_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_not_use_ub,
-              lbl_not_use_p, lbl_history_p, lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_all_p, lbl_little_time_p, lbl_not_use_ub, 
+            try
+            {
+                buttons_click_colors(btn_not_use_p, btn_history_p, btn_all_ub, btn_little_time_ub, btn_history_ub, btn_all_p, btn_little_time_p, btn_not_use_ub,
+              lbl_not_use_p, lbl_history_p, lbl_all_ub, lbl_little_time_ub, lbl_history_ub, lbl_all_p, lbl_little_time_p, lbl_not_use_ub,
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/um1s.png", "/carRental;component/pic/um2s.png", "/carRental;component/pic/um3s.png",
                 "/carRental;component/pic/unps.png", "/carRental;component/pic/unpb.png", 2);
-            show_table_p(" status='nieprzypisany' ",1);
+                show_table_p(" status='nieprzypisany' ", 1);
 
-            int count2 = Convert.ToInt32(lbl_not_use_p.Content);
-            if (count2 != 0)
+                int count2 = Convert.ToInt32(lbl_not_use_p.Content);
+                if (count2 != 0)
+                {
+                    MessageBox.Show("Posiadasz przeglądy, które nie są przypisane do żadnego samochodu.", "Ostrzeżenie");
+                }
+            }
+            catch
             {
-                MessageBox.Show("Posiadasz przeglądy, które nie są przypisane do żadnego samochodu.", "Ostrzeżenie");
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
             }
         }
 
 
-        // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        // ============================================================================================================== \\
 
         DataTable pandp;
 
@@ -272,7 +326,8 @@ namespace carRental.win_overview
                     connection.sql = "SELECT po.ubezpieczyciel, po.kwota_brutto, po.data_od, po.data_do, s.nr_rejestracyjny, " +
                         " s.marka, s.model, po.notatka, po.status FROM Polisy po, Samochody s WHERE s.Id_Polisy = po.Id_Polisy " + txt;
                 }
-                else if (i == 1) {
+                else if (i == 1)
+                {
                     connection.sql = "SELECT ubezpieczyciel, kwota_brutto, data_od, data_do, notatka, status " +
                     " FROM Polisy WHERE " + txt;
                 }
@@ -289,7 +344,7 @@ namespace carRental.win_overview
             connection.closeConnection();
         }
 
-       
+
 
         void show_table_p(string txt, int i)
         {
@@ -317,7 +372,7 @@ namespace carRental.win_overview
             connection.closeConnection();
         }
 
-        
+
         private void Timer_Click(object sender, EventArgs e)
         {
             DateTime d;
@@ -345,7 +400,7 @@ namespace carRental.win_overview
             show_table_ub(" AND data_do > GETDATE() AND status='zajeta' ", 0);
         }
 
-        // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        // ============================================================================================================== \\
 
         void load_count_all_ub()
         {
@@ -393,8 +448,7 @@ namespace carRental.win_overview
             lbl_not_use_ub.Content = Convert.ToString(count);
         }
 
-
-        // @@
+        // ============================================================================================================== \\
 
         void load_count_all_p()
         {
@@ -431,7 +485,8 @@ namespace carRental.win_overview
         }
 
 
-        void load_cout_not_use_p() {
+        void load_cout_not_use_p()
+        {
             connection.openConnection();
             connection.sql = "SELECT count(Id_Przegladu) FROM Przeglady WHERE status='nieprzypisany'";
             connection.cmd.CommandType = CommandType.Text;
@@ -441,8 +496,8 @@ namespace carRental.win_overview
             lbl_not_use_p.Content = Convert.ToString(count);
         }
 
-        void buttons_click_colors(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6, Button b7, Button b8, Label l1, Label l2, 
-            Label l3, Label l4, Label l5, Label l6, Label l7, Label l8, string i1, string i2, string i3, string i4, string i5, string i6, 
+        void buttons_click_colors(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6, Button b7, Button b8, Label l1, Label l2,
+            Label l3, Label l4, Label l5, Label l6, Label l7, Label l8, string i1, string i2, string i3, string i4, string i5, string i6,
             string i7, string i8, int i)
         {
             b1.Background = new SolidColorBrush(Color.FromRgb(166, 159, 199));
@@ -453,7 +508,7 @@ namespace carRental.win_overview
             b6.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
             b7.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
             b8.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
-           
+
             b1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
             b2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
             b3.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
@@ -463,14 +518,14 @@ namespace carRental.win_overview
             b7.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
             b8.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
 
-            l1.Foreground = new SolidColorBrush(Color.FromRgb(255,255,255));
-            l2.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
-            l3.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
-            l4.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
-            l5.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
-            l6.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
-            l7.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
-            l8.Foreground = new SolidColorBrush(Color.FromRgb(112,112,112));
+            l1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
+            l2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l3.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l4.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l5.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l6.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l7.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
+            l8.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
 
             im1.Source = new BitmapImage(new Uri(i1, UriKind.Relative));
             im2.Source = new BitmapImage(new Uri(i2, UriKind.Relative));
@@ -480,16 +535,19 @@ namespace carRental.win_overview
             im6.Source = new BitmapImage(new Uri(i6, UriKind.Relative));
             im7.Source = new BitmapImage(new Uri(i7, UriKind.Relative));
             im8.Source = new BitmapImage(new Uri(i8, UriKind.Relative));
-            
-            if (i == 1) {
+
+            if (i == 1)
+            {
                 rec1.Fill = new SolidColorBrush(Color.FromRgb(188, 183, 214));
                 rec1.Stroke = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-                lbl1.Foreground = new SolidColorBrush(Color.FromRgb(255,255,255));
+                lbl1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
 
                 rec2.Fill = new SolidColorBrush(Color.FromRgb(232, 232, 232));
                 rec2.Stroke = new SolidColorBrush(Color.FromRgb(112, 112, 112));
                 lbl2.Foreground = new SolidColorBrush(Color.FromRgb(112, 112, 112));
-            } else if (i == 2){
+            }
+            else if (i == 2)
+            {
                 rec2.Fill = new SolidColorBrush(Color.FromRgb(188, 183, 214));
                 rec2.Stroke = new SolidColorBrush(Color.FromRgb(112, 112, 112));
                 lbl2.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
@@ -501,6 +559,8 @@ namespace carRental.win_overview
 
             checking_if_zero();
         }
+
+        // ============================================================================================================== \\
 
         private void Btn_new_service_Click(object sender, RoutedEventArgs e)
         {
@@ -526,6 +586,7 @@ namespace carRental.win_overview
             nuw.ShowDialog();
         }
 
+        // ============================================================================================================== \\
 
         void checking_if_zero()
         {
@@ -562,11 +623,13 @@ namespace carRental.win_overview
                 btn_little_time_p.Background = new SolidColorBrush(Color.FromRgb(241, 126, 126));
                 btn_little_time_p.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
                 lbl_little_time_p.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-                im4.Source = new BitmapImage(new Uri("/carRental;component/pic/um2b.png", UriKind.Relative));
+                im5.Source = new BitmapImage(new Uri("/carRental;component/pic/um2b.png", UriKind.Relative));
             }
 
-            
+
         }
+
+        // ============================================================================================================== \\
 
         private void Btn_reload_Click(object sender, RoutedEventArgs e)
         {
@@ -575,13 +638,14 @@ namespace carRental.win_overview
             Timer.Start();
 
             open_Window();
+            MessageBox.Show("Odświeżenie otwartej karty zostało zakończone sukcesem.", "Komunikat.");
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             dataGrid1.Background = new SolidColorBrush(Color.FromRgb(241, 126, 126));
             dataGrid1.Foreground = new SolidColorBrush(Color.FromRgb(255, 255, 255));
-            
+
         }
 
         private void Btn_logout_Click(object sender, RoutedEventArgs e)
@@ -590,6 +654,6 @@ namespace carRental.win_overview
             lw.ShowDialog();
         }
 
-        
+
     }
 }

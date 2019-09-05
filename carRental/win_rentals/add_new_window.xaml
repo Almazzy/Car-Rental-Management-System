@@ -38,7 +38,7 @@
         <Rectangle Fill="#FFF0D264" HorizontalAlignment="Left" Height="18" Margin="342,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="342"/>
         <TextBox x:Name="txt_number" HorizontalAlignment="Left" Height="31" Margin="20,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
         <TextBox x:Name="txt_type" HorizontalAlignment="Left" Height="31" Margin="20,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
-        <Label Content="numer zlecenia:" HorizontalAlignment="Left" Margin="20,156,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Label Content="numer zlecenia:" HorizontalAlignment="Left" Margin="16,158,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
         <ComboBox x:Name="combo_emp" HorizontalAlignment="Left" Margin="20,373,0,0" VerticalAlignment="Top" Width="302" BorderBrush="White" Height="31" FontSize="16">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
@@ -73,32 +73,32 @@
         </ComboBox>
         <Button x:Name="btn_add_new_client" Content="dodaj nowego klienta" HorizontalAlignment="Left" Margin="357,279,0,0" VerticalAlignment="Top" Width="302" Height="31" Click="Btn_add_new_client_Click"/>
         <DatePicker x:Name="date_w" HorizontalAlignment="Left" Margin="828,156,0,0" VerticalAlignment="Top" Width="180" SelectedDateFormat="Short"/>
-        
-        <Label Content="data wydania:" HorizontalAlignment="Left" Margin="704,155,0,0" VerticalAlignment="Top" Width="119" OpacityMask="Black" Foreground="Black" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
-        <Label Content="data odbioru:" HorizontalAlignment="Left" Margin="704,341,0,0" VerticalAlignment="Top" Width="119" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
+
+        <Label Content="data wydania:" HorizontalAlignment="Left" Margin="699,154,0,0" VerticalAlignment="Top" Width="119" OpacityMask="Black" Foreground="Black" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
+        <Label Content="data odbioru:" HorizontalAlignment="Left" Margin="699,340,0,0" VerticalAlignment="Top" Width="119" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
         <TextBox x:Name="txt_where_w" HorizontalAlignment="Left" Height="55" Margin="704,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="303" FontSize="16"/>
         <DatePicker x:Name="date_o" HorizontalAlignment="Left" Margin="828,343,0,0" VerticalAlignment="Top" Width="180"/>
-        <Label Content="miejsce wydania:" HorizontalAlignment="Left" Margin="704,215,0,0" VerticalAlignment="Top" Width="128" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
+        <Label Content="miejsce wydania:" HorizontalAlignment="Left" Margin="699,215,0,0" VerticalAlignment="Top" Width="128" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
         <TextBox x:Name="txt_where_o" HorizontalAlignment="Left" Height="54" Margin="704,423,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="304" FontSize="16"/>
-        <Label Content="miejsce odbioru:" HorizontalAlignment="Left" Margin="704,392,0,0" VerticalAlignment="Top" Width="119" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="25" Margin="709,168,0,0" VerticalAlignment="Top" Width="81" Background="#FFCB99C5"/>
-        <Separator HorizontalAlignment="Left" Height="25" Margin="709,228,0,0" VerticalAlignment="Top" Width="104" Background="#FFCB99C5"/>
-        <Separator HorizontalAlignment="Left" Height="25" Margin="709,405,0,0" VerticalAlignment="Top" Width="100" Background="#FFCB99C5" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="25" Margin="709,352,0,0" VerticalAlignment="Top" Width="77" Background="#FFCB99C5"/>
-       
-        <Label Content="typ wynajmu:" HorizontalAlignment="Left" Margin="20,241,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Label Content="pracownik odpowiedzialny:" HorizontalAlignment="Left" Margin="20,334,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Label Content="cennik:" HorizontalAlignment="Left" Margin="20,418,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,168,0,0" VerticalAlignment="Top" Width="97" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,254,0,0" VerticalAlignment="Top" Width="78" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,348,0,0" VerticalAlignment="Top" Width="174" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,430,0,0" VerticalAlignment="Top" Width="38" Background="#FF9ABF7F"/>
-        <Label Content="nowy klient:" HorizontalAlignment="Left" Margin="357,242,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="91"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="362,254,0,0" VerticalAlignment="Top" Width="76" Background="#FFF0D264"/>
-        <Label Content="wybrany klient:" HorizontalAlignment="Left" Margin="357,156,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="119"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="362,168,0,0" VerticalAlignment="Top" Width="94" Background="#FFF0D264"/>
-        <Label Content="samochód:" HorizontalAlignment="Left" Margin="357,336,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="91"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="362,348,0,0" VerticalAlignment="Top" Width="60" Background="#FFF0D264"/>
+        <Label Content="miejsce odbioru:" HorizontalAlignment="Left" Margin="699,392,0,0" VerticalAlignment="Top" Width="125" FontSize="14" FontWeight="Bold" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="25" Margin="704,167,0,0" VerticalAlignment="Top" Width="88" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="25" Margin="704,228,0,0" VerticalAlignment="Top" Width="111" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="25" Margin="704,405,0,0" VerticalAlignment="Top" Width="108" Background="#FFCB99C5" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="704,350,0,0" VerticalAlignment="Top" Width="85" Background="#FFCB99C5"/>
+
+        <Label Content="typ wynajmu:" HorizontalAlignment="Left" Margin="16,247,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Label Content="pracownik odpowiedzialny:" HorizontalAlignment="Left" Margin="17,340,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Label Content="cennik:" HorizontalAlignment="Left" Margin="17,425,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="20,170,0,0" VerticalAlignment="Top" Width="104" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="20,260,0,0" VerticalAlignment="Top" Width="86" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,354,0,0" VerticalAlignment="Top" Width="182" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,437,0,0" VerticalAlignment="Top" Width="46" Background="#FF9ABF7F"/>
+        <Label Content="nowy klient:" HorizontalAlignment="Left" Margin="353,248,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="91"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="358,260,0,0" VerticalAlignment="Top" Width="76" Background="#FFF0D264"/>
+        <Label Content="wybrany klient:" HorizontalAlignment="Left" Margin="354,158,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="118"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="358,170,0,0" VerticalAlignment="Top" Width="98" Background="#FFF0D264"/>
+        <Label Content="samochód:" HorizontalAlignment="Left" Margin="353,342,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light" Width="91"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="358,354,0,0" VerticalAlignment="Top" Width="69" Background="#FFF0D264"/>
         <Label Content="klient &amp;&#xD;&#xA;samochód" HorizontalAlignment="Left" Margin="372,38,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT"/>
         <Label Content="Podstawowe &#xD;&#xA;informacje" HorizontalAlignment="Left" Margin="30,38,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT"/>
         <Label Content="daty &amp;&#xD;&#xA;miejsca" HorizontalAlignment="Left" Margin="716,38,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT"/>
@@ -109,13 +109,13 @@
         <Button x:Name="btn_add" HorizontalAlignment="Left" Margin="362,515,0,0" VerticalAlignment="Top" Width="304" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="D O D A J  W Y D A N I E" Foreground="White" FontSize="18" Click="Btn_add_Click"/>
         <Button x:Name="btn_exit" HorizontalAlignment="Left" Margin="61,515,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FFBF7F7F" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="anuluj" Foreground="White" Click="Btn_exit_Click"/>
         <Button x:Name="btn_refresh" HorizontalAlignment="Left" Margin="136,515,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="ODŚWIEŻ" Foreground="White" Click="Btn_refresh_Click"/>
-        
+
         <Label x:Name="lbl_car1" Content="" HorizontalAlignment="Left" Margin="409,409,0,0" VerticalAlignment="Top" Width="82" FontFamily="Rockwell Nova Light"/>
         <Label x:Name="lbl_car2" Content="" HorizontalAlignment="Left" Margin="543,409,0,0" VerticalAlignment="Top" Width="77" FontFamily="Rockwell Nova Light" Height="28"/>
         <Label x:Name="lbl_car1_Copy" Content="Marka:" HorizontalAlignment="Left" Margin="357,409,0,0" VerticalAlignment="Top" Width="52" FontFamily="Rockwell Nova Cond Light"/>
         <Label x:Name="lbl_car1_Copy1" Content="Model:" HorizontalAlignment="Left" Margin="491,409,0,0" VerticalAlignment="Top" Width="52" FontFamily="Rockwell Nova Cond Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="362,417,0,0" VerticalAlignment="Top" Width="33" Background="#FFF0D264"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="496,417,0,0" VerticalAlignment="Top" Width="34" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="362,420,0,0" VerticalAlignment="Top" Width="37" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="496,420,0,0" VerticalAlignment="Top" Width="37" Background="#FFF0D264"/>
         <Image Source="/carRental;component/pic/f8.png" HorizontalAlignment="Left" Height="39" VerticalAlignment="Top" Width="51" Margin="10,515,0,0"/>
         <Separator HorizontalAlignment="Left" Height="14" Margin="31,528,0,0" VerticalAlignment="Top" Width="46" Background="White" RenderTransformOrigin="0.5,0.5">
             <Separator.RenderTransform>

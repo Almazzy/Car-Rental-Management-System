@@ -17,7 +17,7 @@
         <ComboBox x:Name="combo_car" HorizontalAlignment="Left" Margin="30,182,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16" SelectionChanged="Combo_car_SelectionChanged_1"/>
         <Button x:Name="btn_check" Content="p o t w i e r d z  d a n e" HorizontalAlignment="Left" Margin="30,267,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16" Click="Btn_check_Click" Background="#FF7FB1BF" Foreground="White"/>
         <Separator HorizontalAlignment="Left" Height="21" Margin="4,308,0,0" VerticalAlignment="Top" Width="341"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="10,156,0,0" VerticalAlignment="Top" Width="116" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="10,156,0,0" VerticalAlignment="Top" Width="130" Background="#FF9ABF7F"/>
         <Label Content="Marka: " HorizontalAlignment="Left" Margin="41,231,0,0" VerticalAlignment="Top" Width="56" FontFamily="Rockwell Nova Cond"/>
         <Label Content="Model: " HorizontalAlignment="Left" Margin="181,231,0,0" VerticalAlignment="Top" Width="53" FontFamily="Rockwell Nova Cond"/>
         <Label x:Name="lbl_car1" Content="" HorizontalAlignment="Left" Margin="97,231,0,0" VerticalAlignment="Top" Width="84" FontFamily="Rockwell Nova Light"/>
@@ -28,11 +28,11 @@
         <Label HorizontalContentAlignment="Right" x:Name="lbl_inf2" Content="-" HorizontalAlignment="Left" Margin="93,390,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
         <Label Content="planowana data odbioru:" HorizontalAlignment="Left" Margin="5,426,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
         <Label HorizontalContentAlignment="Right" x:Name="lbl_inf3" Content="-" HorizontalAlignment="Left" Margin="93,468,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Light" FontSize="16" Width="238"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="10,341,0,0" VerticalAlignment="Top" Width="56" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="10,370,0,0" VerticalAlignment="Top" Width="79" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="20" Margin="10,443,0,0" VerticalAlignment="Top" Width="185" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="46,241,0,0" VerticalAlignment="Top" Width="34" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="186,241,0,0" VerticalAlignment="Top" Width="35" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="10,341,0,0" VerticalAlignment="Top" Width="67" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="10,370,0,0" VerticalAlignment="Top" Width="92" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="20" Margin="10,443,0,0" VerticalAlignment="Top" Width="193" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="46,241,0,0" VerticalAlignment="Top" Width="38" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="186,241,0,0" VerticalAlignment="Top" Width="38" Background="#FF9ABF7F"/>
         <Rectangle Fill="#FFCB99C5" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="301" Margin="691,22,0,0"/>
         <Rectangle Fill="#FFCB99C5" HorizontalAlignment="Left" Height="10" Margin="674,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="352"/>
         <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="10" Margin="0,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="345"/>
@@ -52,13 +52,13 @@
         <Label Content="Model: " HorizontalAlignment="Left" Margin="511,241,0,0" VerticalAlignment="Top" Width="53" FontFamily="Rockwell Nova Cond"/>
         <Label x:Name="lbl_car1_new" Content="" HorizontalAlignment="Left" Margin="427,241,0,0" VerticalAlignment="Top" Width="84" FontFamily="Rockwell Nova Light"/>
         <Label x:Name="lbl_car2_new" Content="" HorizontalAlignment="Left" Margin="564,241,0,0" VerticalAlignment="Top" Width="84" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="376,251,0,0" VerticalAlignment="Top" Width="34" Background="#FFF0D264"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="516,251,0,0" VerticalAlignment="Top" Width="35" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="376,251,0,0" VerticalAlignment="Top" Width="37" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="516,251,0,0" VerticalAlignment="Top" Width="38" Background="#FFF0D264"/>
         <Label Content="wyszukaj nowy pojazd:" HorizontalAlignment="Left" Margin="350,148,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="355,166,0,0" VerticalAlignment="Top" Width="168" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="355,166,0,0" VerticalAlignment="Top" Width="180" Background="#FFF0D264"/>
         <DatePicker x:Name="date_o" HorizontalAlignment="Left" Margin="704,390,0,0" VerticalAlignment="Top" Height="41" Width="301"/>
         <Label Content="zmień datę odbioru:" HorizontalAlignment="Left" Margin="686,339,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="691,354,0,0" VerticalAlignment="Top" Width="148" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="691,354,0,0" VerticalAlignment="Top" Width="155" Background="#FFCB99C5"/>
         <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="310" Margin="21,22,0,0"/>
         <Separator HorizontalAlignment="Left" Height="22" Margin="156,309,0,0" VerticalAlignment="Top" Width="377" RenderTransformOrigin="0.5,0.5" Background="Black">
             <Separator.RenderTransform>
@@ -75,12 +75,12 @@
         <Label Content="  wybierz date &#xA;i miejsce odbioru"  HorizontalAlignment="Left" Margin="691,38,0,0" VerticalAlignment="Top" FontSize="25" FontFamily="Perpetua Titling MT" Foreground="White" HorizontalContentAlignment="Center" Width="301" Height="70"/>
         <ComboBox x:Name="combo_pri" HorizontalAlignment="Left" Margin="359,334,0,0" VerticalAlignment="Top" Width="301" Height="41" FontFamily="Rockwell Nova Light" FontSize="16" SelectionChanged="Combo_car_SelectionChanged_1"/>
         <Label Content="wyszukaj nowy cennik:" HorizontalAlignment="Left" Margin="350,290,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="355,308,0,0" VerticalAlignment="Top" Width="168" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="355,308,0,0" VerticalAlignment="Top" Width="180" Background="#FFF0D264"/>
         <TextBox x:Name="txt_type" HorizontalAlignment="Left" Height="31" Margin="362,452,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" FontSize="16"/>
         <Label Content="edytuj typ wynajmu:" HorizontalAlignment="Left" Margin="354,408,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="359,426,0,0" VerticalAlignment="Top" Width="168" Background="#FFF0D264"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="359,426,0,0" VerticalAlignment="Top" Width="158" Background="#FFF0D264"/>
         <Label Content="zmień miejsce odbioru:" HorizontalAlignment="Left" Margin="686,141,0,0" VerticalAlignment="Top" FontFamily="Rockwell Nova Cond" FontSize="16"/>
-        <Separator HorizontalAlignment="Left" Height="21" Margin="691,156,0,0" VerticalAlignment="Top" Width="170" Background="#FFCB99C5"/>
+        <Separator HorizontalAlignment="Left" Height="21" Margin="691,156,0,0" VerticalAlignment="Top" Width="181" Background="#FFCB99C5"/>
         <TextBox x:Name="txt_where_o" HorizontalAlignment="Left" Height="129" Margin="691,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="301" FontSize="16"/>
         <Button x:Name="btn_exit" HorizontalAlignment="Left" Margin="61,515,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FFBF7F7F" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="anuluj" Foreground="White" Click="Btn_exit_Click"/>
         <Button x:Name="btn_refresh" HorizontalAlignment="Left" Margin="136,515,0,0" VerticalAlignment="Top" Width="70" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="ODŚWIEŻ" Foreground="White" Click="Btn_refresh_Click"/>

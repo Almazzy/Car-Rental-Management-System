@@ -24,7 +24,7 @@ using carRental.win_rentals;
 
 namespace carRental.win_cars
 {
- 
+
     /// <summary>
     /// Logika interakcji dla klasy cars_window.xaml
     /// </summary>
@@ -42,6 +42,8 @@ namespace carRental.win_cars
 
             open_Window();
         }
+
+        // ============================================================================================================== \\
 
         void load_count_all_cars()
         {
@@ -98,6 +100,7 @@ namespace carRental.win_cars
             lbl_ser_cars.Content = Convert.ToString(count);
         }
 
+        // ============================================================================================================== \\
 
         void click_buttons_background(byte c1, byte c2, byte c3, byte c4, byte c5, byte c6, byte c7, byte c8, byte c9,
             byte c10, byte c11, byte c12, byte c13, byte c14, byte c15)
@@ -111,7 +114,7 @@ namespace carRental.win_cars
 
         void click_lbl_freground(byte c1, byte c2, byte c3, byte c4, byte c5, byte c6, byte c7, byte c8, byte c9,
             byte c10, byte c11, byte c12, byte c13, byte c14, byte c15)
-        { 
+        {
             lbl_all_cars.Foreground = new SolidColorBrush(Color.FromRgb(c1, c2, c3));
             lbl_wy_cars.Foreground = new SolidColorBrush(Color.FromRgb(c4, c5, c6));
             lbl_wo_cars.Foreground = new SolidColorBrush(Color.FromRgb(c7, c8, c9));
@@ -138,15 +141,17 @@ namespace carRental.win_cars
             im5.Source = new BitmapImage(new Uri(i5, UriKind.Relative));
         }
 
-        //--==========================================================================
+        // ============================================================================================================== \\
 
-        void bottom_buttons_colors(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6, int i) {
+        void bottom_buttons_colors(Button b1, Button b2, Button b3, Button b4, Button b5, Button b6, int i)
+        {
             if (i == 1)
             {
                 b1.Opacity = 0.5;
                 b1.Background = new SolidColorBrush(Color.FromRgb(203, 153, 197));
             }
-            else {
+            else
+            {
                 b1.Opacity = 0.75;
                 b1.Background = new SolidColorBrush(Color.FromRgb(232, 232, 232));
             }
@@ -200,8 +205,8 @@ namespace carRental.win_cars
         {
             try
             {
-                connection.sql = "SELECT s.nr_rejestracyjny, s.vin, s.marka, s.model, s.rok_produkcji, " + 
-                    " s.pojemnosc, s.paliwo, s.typ, s.stan, pr.data_doo, po.data_do FROM Samochody s, " + 
+                connection.sql = "SELECT s.nr_rejestracyjny, s.vin, s.marka, s.model, s.rok_produkcji, " +
+                    " s.pojemnosc, s.paliwo, s.typ, s.stan, pr.data_doo, po.data_do FROM Samochody s, " +
                     " Przeglady pr, Polisy po WHERE s.Id_Polisy=po.Id_Polisy AND s.Id_Przegladu =pr.Id_Przegladu " + txt;
                 connection.cmd.CommandText = connection.sql;
                 connection.da = new SqlDataAdapter(connection.cmd);
@@ -241,14 +246,15 @@ namespace carRental.win_cars
             show_table("");
         }
 
-        private void main_buttons_not_use() {
+        private void main_buttons_not_use()
+        {
             click_buttons_background(232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232);
             click_lbl_freground(112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112);
             main_buttons_foreground(112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112);
             main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
         }
 
-        // nav:
+        // =nav=========================================================================================================== \\ 
 
         private void Btn_rentals_Click(object sender, RoutedEventArgs e)
         {
@@ -289,7 +295,8 @@ namespace carRental.win_cars
             this.Close();
             ew.ShowDialog();
         }
-        // =======================================
+
+        // ============================================================================================================== \\
 
         private void Txt_s1_TextChanged(object sender, TextChangedEventArgs e)
         {
@@ -368,207 +375,336 @@ namespace carRental.win_cars
             dataGrid1.ItemsSource = DV;
         }
 
+        // ============================================================================================================== \\
+
         private void Btn_all_cars_Click(object sender, RoutedEventArgs e) //1
         {
-            click_buttons_background(203, 153, 197, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232);
-            click_lbl_freground(255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112);
-            main_buttons_foreground(255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112);
-            main_buttons_image_source("/carRental;component/pic/cars/twob.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
-            show_table(" AND aktywnosc = 'aktywny'");
+            try
+            {
+                click_buttons_background(203, 153, 197, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232);
+                click_lbl_freground(255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112);
+                main_buttons_foreground(255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112);
+                main_buttons_image_source("/carRental;component/pic/cars/twob.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
+                show_table(" AND aktywnosc = 'aktywny'");
 
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
-
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_wy_cars_Click(object sender, RoutedEventArgs e)//2
         {
-            click_buttons_background(232, 232, 232, 203, 153, 197, 232, 232, 232, 232, 232, 232, 232, 232, 232);
-            click_lbl_freground(112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112);
-            main_buttons_foreground(112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112);
-            main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcarb.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
-            show_table(" AND s.stan='wydany' AND aktywnosc = 'aktywny'");
+            try
+            {
+                click_buttons_background(232, 232, 232, 203, 153, 197, 232, 232, 232, 232, 232, 232, 232, 232, 232);
+                click_lbl_freground(112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112);
+                main_buttons_foreground(112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112, 112, 112, 112);
+                main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcarb.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
+                show_table(" AND s.stan='wydany' AND aktywnosc = 'aktywny'");
 
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_wo_cars_Click(object sender, RoutedEventArgs e) //3
         {
-            click_buttons_background(232, 232, 232, 232, 232, 232, 203, 153, 197, 232, 232, 232, 232, 232, 232);
-            click_lbl_freground(112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112);
-            main_buttons_foreground(112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112);
-            main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wolb.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
-            show_table(" AND s.stan='wolny' AND aktywnosc = 'aktywny'");
+            try
+            {
+                click_buttons_background(232, 232, 232, 232, 232, 232, 203, 153, 197, 232, 232, 232, 232, 232, 232);
+                click_lbl_freground(112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112);
+                main_buttons_foreground(112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112, 112, 112, 112);
+                main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wolb.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/sers.png");
+                show_table(" AND s.stan='wolny' AND aktywnosc = 'aktywny'");
 
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_res_cars_Click(object sender, RoutedEventArgs e)//4
         {
-            click_buttons_background(232, 232, 232, 232, 232, 232, 232, 232, 232, 203, 153, 197, 232, 232, 232);
-            click_lbl_freground(112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112);
-            main_buttons_foreground(112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112);
-            main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/resb.png", "/carRental;component/pic/cars/sers.png");
-            show_table(" AND s.stan='rezerwacja' AND aktywnosc = 'aktywny'");
+            try
+            {
+                click_buttons_background(232, 232, 232, 232, 232, 232, 232, 232, 232, 203, 153, 197, 232, 232, 232);
+                click_lbl_freground(112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112);
+                main_buttons_foreground(112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255, 112, 112, 112);
+                main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/resb.png", "/carRental;component/pic/cars/sers.png");
+                show_table(" AND s.stan='rezerwacja' AND aktywnosc = 'aktywny'");
 
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_ser_cars_Click(object sender, RoutedEventArgs e)//5
         {
-            click_buttons_background(232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 203, 153, 197);
-            click_lbl_freground(112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255);
-            main_buttons_foreground(112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255);
-            main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/serb.png");
-            show_table(" AND s.stan='serwis' AND aktywnosc = 'aktywny'");
-            show_table(" AND s.stan='dyzur' AND aktywnosc = 'aktywny'");
+            try
+            {
+                click_buttons_background(232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 232, 203, 153, 197);
+                click_lbl_freground(112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255);
+                main_buttons_foreground(112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 112, 255, 255, 255);
+                main_buttons_image_source("/carRental;component/pic/cars/twos.png", "/carRental;component/pic/cars/manwcars.png", "/carRental;component/pic/cars/wols.png", "/carRental;component/pic/cars/ress.png", "/carRental;component/pic/cars/serb.png");
+                show_table(" AND s.stan='serwis' AND aktywnosc = 'aktywny'");
+                show_table(" AND s.stan='dyzur' AND aktywnosc = 'aktywny'");
 
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
-        
-
-        // =====================================================
+        // ============================================================================================================== \\
 
         private void Btn_hatchback_Click(object sender, RoutedEventArgs e)
         {
-            bottom_buttons_colors(btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, btn_van, 1);
-            show_table(" AND s.typ='hatchback' AND aktywnosc = 'aktywny'");
+            try
+            {
+                bottom_buttons_colors(btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, btn_van, 1);
+                show_table(" AND s.typ='hatchback' AND aktywnosc = 'aktywny'");
 
 
-            main_buttons_not_use();
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                main_buttons_not_use();
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_sedan_Click(object sender, RoutedEventArgs e)
         {
-            bottom_buttons_colors(btn_sedan, btn_hatchback, btn_kombi, btn_sport, btn_suvy, btn_van, 1);
-            show_table(" AND s.typ='sedan' AND aktywnosc = 'aktywny'");
+            try
+            {
+                bottom_buttons_colors(btn_sedan, btn_hatchback, btn_kombi, btn_sport, btn_suvy, btn_van, 1);
+                show_table(" AND s.typ='sedan' AND aktywnosc = 'aktywny'");
 
 
-            main_buttons_not_use();
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                main_buttons_not_use();
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_kombi_Click(object sender, RoutedEventArgs e)
         {
-            bottom_buttons_colors(btn_kombi, btn_hatchback, btn_sedan, btn_sport, btn_suvy, btn_van, 1);
-            show_table(" AND s.typ='kombi' AND aktywnosc = 'aktywny'");
+            try
+            {
+                bottom_buttons_colors(btn_kombi, btn_hatchback, btn_sedan, btn_sport, btn_suvy, btn_van, 1);
+                show_table(" AND s.typ='kombi' AND aktywnosc = 'aktywny'");
 
 
-            main_buttons_not_use();
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                main_buttons_not_use();
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_sport_Click(object sender, RoutedEventArgs e)
         {
-            bottom_buttons_colors(btn_sport, btn_hatchback, btn_sedan, btn_kombi, btn_suvy, btn_van, 1);
-            show_table(" AND s.typ='coupe' AND aktywnosc = 'aktywny'");
+            try
+            {
+                bottom_buttons_colors(btn_sport, btn_hatchback, btn_sedan, btn_kombi, btn_suvy, btn_van, 1);
+                show_table(" AND s.typ='coupe' AND aktywnosc = 'aktywny'");
 
 
-            main_buttons_not_use();
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                main_buttons_not_use();
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_suvy_Click(object sender, RoutedEventArgs e)
         {
-            bottom_buttons_colors(btn_suvy, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_van, 1);
-            show_table(" AND s.typ='suv' AND aktywnosc = 'aktywny'");
+            try
+            {
+                bottom_buttons_colors(btn_suvy, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_van, 1);
+                show_table(" AND s.typ='suv' AND aktywnosc = 'aktywny'");
 
 
-            main_buttons_not_use();
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                main_buttons_not_use();
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_van_Click(object sender, RoutedEventArgs e)
         {
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 1);
-            show_table(" AND s.typ='van' AND aktywnosc = 'aktywny'");
+            try
+            {
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 1);
+                show_table(" AND s.typ='van' AND aktywnosc = 'aktywny'");
 
 
-            main_buttons_not_use();
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+                main_buttons_not_use();
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
-
-        // =====================================================
-
-
+        // ============================================================================================================== \\
 
         private void Btn_a_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, btn_suv, 1);
-            show_table(" AND s.klasa='a' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, btn_suv, 1);
+                show_table(" AND s.klasa='a' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_b_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_b, btn_a, btn_c, btn_d, btn_e, btn_p, btn_r, btn_suv, 1);
-            show_table(" AND s.klasa='b' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_b, btn_a, btn_c, btn_d, btn_e, btn_p, btn_r, btn_suv, 1);
+                show_table(" AND s.klasa='b' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_c_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_c, btn_a, btn_b, btn_d, btn_e, btn_p, btn_r, btn_suv, 1);
-            show_table(" AND s.klasa='c' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_c, btn_a, btn_b, btn_d, btn_e, btn_p, btn_r, btn_suv, 1);
+                show_table(" AND s.klasa='c' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_d_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_d, btn_a, btn_b, btn_c, btn_e, btn_p, btn_r, btn_suv, 1);
-            show_table(" AND s.klasa='d' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_d, btn_a, btn_b, btn_c, btn_e, btn_p, btn_r, btn_suv, 1);
+                show_table(" AND s.klasa='d' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_e_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_e, btn_a, btn_b, btn_c, btn_d, btn_p, btn_r, btn_suv, 1);
-            show_table(" AND s.klasa='e' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_e, btn_a, btn_b, btn_c, btn_d, btn_p, btn_r, btn_suv, 1);
+                show_table(" AND s.klasa='e' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_p_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_p, btn_a, btn_b, btn_c, btn_d, btn_e, btn_r, btn_suv, 1);
-            show_table(" AND s.klasa='p' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_p, btn_a, btn_b, btn_c, btn_d, btn_e, btn_r, btn_suv, 1);
+                show_table(" AND s.klasa='p' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_r_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_r, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_suv, 1);
-            show_table(" AND s.klasa='r' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_r, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_suv, 1);
+                show_table(" AND s.klasa='r' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_suv_Click(object sender, RoutedEventArgs e)
         {
-            top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 1);
-            show_table(" AND s.klasa='suv' AND aktywnosc = 'aktywny'");
+            try
+            {
+                top_buttons_colors(btn_suv, btn_a, btn_b, btn_c, btn_d, btn_e, btn_p, btn_r, 1);
+                show_table(" AND s.klasa='suv' AND aktywnosc = 'aktywny'");
 
-            main_buttons_not_use();
-            bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+                main_buttons_not_use();
+                bottom_buttons_colors(btn_van, btn_hatchback, btn_sedan, btn_kombi, btn_sport, btn_suvy, 2);
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
         }
 
         private void Btn_reload_Click(object sender, RoutedEventArgs e)
@@ -578,9 +714,10 @@ namespace carRental.win_cars
             Timer.Start();
 
             open_Window();
+            MessageBox.Show("Odświeżenie otwartej karty zostało zakończone sukcesem.", "Komunikat.");
         }
 
-        // --------------------------------------------------------------------
+        // ============================================================================================================== \\
 
         private void Btn_change_status_Click(object sender, RoutedEventArgs e)
         {
@@ -606,6 +743,6 @@ namespace carRental.win_cars
             lw.ShowDialog();
         }
 
-     
+
     }
 }

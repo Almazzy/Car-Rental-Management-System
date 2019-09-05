@@ -128,9 +128,9 @@
         <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="276,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Image Source="/carRental;component/pic/car.png" HorizontalAlignment="Left" Height="40" Margin="508,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Button x:Name="btn_overview" Content="     Polisy &amp;&#xA;    Przęglądy" HorizontalAlignment="Left" Margin="730,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFA69FC7" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_overview_Click" />
-        <Button x:Name="btn_finance" Content="   Finanse" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click_1" />
+        <Button x:Name="btn_finance" Content="   Faktury" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click_1" />
         <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="40" Margin="740,74,0,0" VerticalAlignment="Top" Width="48"/>
-        <Image Source="/carRental;component/pic/team.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
+        <Image Source="/carRental;component/pic/inv/invib.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Separator HorizontalAlignment="Left" Height="100" Margin="791,69,0,0" VerticalAlignment="Top" Width="94" Background="White"/>
         <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
             <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>

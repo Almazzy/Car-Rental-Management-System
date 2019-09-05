@@ -11,25 +11,25 @@
         <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="492"/>
 
         <Rectangle Fill="#FF454553" HorizontalAlignment="Left" Height="63" Stroke="Black" VerticalAlignment="Top" Width="492" Margin="0,565,0,0"/>
-        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="452" Margin="20,22,0,0"/>
-        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="18" Margin="0,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="492"/>
+        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="368" Margin="62,22,0,0"/>
+        <Rectangle Fill="#FF9ABF7F" HorizontalAlignment="Left" Height="18" Margin="20,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="452"/>
 
         <TextBox x:Name="txt_name" HorizontalAlignment="Left" Height="32" Margin="20,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" FontSize="16"/>
         <TextBox x:Name="txt_pes" HorizontalAlignment="Left" Height="32" Margin="20,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" FontSize="16"/>
         <TextBox x:Name="txt_no" HorizontalAlignment="Left" Height="31" Margin="20,339,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="452" FontSize="16"/>
-        <Label Content="pesel:" HorizontalAlignment="Left" Margin="20,229,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Label Content="pesel:" HorizontalAlignment="Left" Margin="17,227,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
 
-        <Label Content="nr telefonu:" HorizontalAlignment="Left" Margin="20,307,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Label Content="imię i nazwisko:" HorizontalAlignment="Left" Margin="20,152,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,241,0,0" VerticalAlignment="Top" Width="38" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,320,0,0" VerticalAlignment="Top" Width="73" Background="#FF9ABF7F"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,166,0,0" VerticalAlignment="Top" Width="103" Background="#FF9ABF7F"/>
-        <Label HorizontalContentAlignment="Center" Content="podstawowe informacje&#xD;&#xA;         o pracowniku" HorizontalAlignment="Left" Margin="20,38,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT" Width="452"/>
+        <Label Content="nr telefonu:" HorizontalAlignment="Left" Margin="17,306,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Label Content="imię i nazwisko:" HorizontalAlignment="Left" Margin="17,153,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,240,0,0" VerticalAlignment="Top" Width="38" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,319,0,0" VerticalAlignment="Top" Width="73" Background="#FF9ABF7F"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,166,0,0" VerticalAlignment="Top" Width="103" Background="#FF9ABF7F"/>
+        <Label HorizontalContentAlignment="Center" Content="podstawowe informacje&#xD;&#xA;         o pracowniku" HorizontalAlignment="Left" Margin="62,38,0,0" VerticalAlignment="Top" FontSize="25" Foreground="White" FontFamily="Perpetua Titling MT" Width="368"/>
         <Label Content="3" HorizontalAlignment="Left" Margin="1002,118,0,0" VerticalAlignment="Top" FontSize="15" Foreground="Black" FontFamily="Perpetua Titling MT" Width="20" Height="28"/>
-        <Button x:Name="btn_add" HorizontalAlignment="Left" Margin="20,571,0,0" VerticalAlignment="Top" Width="452" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="D O D A J  p r a c o w n i k a" Foreground="White" FontSize="18" Click="Btn_add_Click"/>
+        <Button x:Name="btn_add" HorizontalAlignment="Left" Margin="62,571,0,0" VerticalAlignment="Top" Width="368" Height="39" Background="#FF7FB1BF" BorderBrush="Black" FontFamily="Perpetua Titling MT" Content="D O D A J  p r a c o w n i k a" Foreground="White" FontSize="18" Click="Btn_add_Click"/>
 
-        <Label Content="zatrudniony dnia:" HorizontalAlignment="Left" Margin="20,385,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,398,0,0" VerticalAlignment="Top" Width="114" Background="#FF9ABF7F"/>
+        <Label Content="zatrudniony dnia:" HorizontalAlignment="Left" Margin="17,384,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,397,0,0" VerticalAlignment="Top" Width="114" Background="#FF9ABF7F"/>
         <DatePicker x:Name="date_od" HorizontalAlignment="Left" Margin="20,417,0,0" VerticalAlignment="Top" Height="24" Width="208"/>
         <ComboBox x:Name="combo_s" HorizontalAlignment="Left" Margin="264,417,0,0" VerticalAlignment="Top" Width="208" BorderBrush="White" Height="24" FontSize="16">
             <ComboBox.Background>
@@ -39,14 +39,14 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Label Content="stanowisko:" HorizontalAlignment="Left" Margin="265,385,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="269,398,0,0" VerticalAlignment="Top" Width="74" Background="#FF9ABF7F"/>
+        <Label Content="stanowisko:" HorizontalAlignment="Left" Margin="261,384,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="265,397,0,0" VerticalAlignment="Top" Width="74" Background="#FF9ABF7F"/>
         <Separator HorizontalAlignment="Left" Height="20" Margin="24,454,0,0" VerticalAlignment="Top" Width="448"/>
         <TextBox x:Name="txt_login" HorizontalAlignment="Left" Height="32" Margin="20,513,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="16"/>
-        <Label Content="login:" HorizontalAlignment="Left" Margin="20,479,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="24,493,0,0" VerticalAlignment="Top" Width="34" Background="#FF9ABF7F"/>
+        <Label Content="login:" HorizontalAlignment="Left" Margin="17,480,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="21,493,0,0" VerticalAlignment="Top" Width="34" Background="#FF9ABF7F"/>
         <TextBox x:Name="txt_password" HorizontalAlignment="Left" Height="32" Margin="264,513,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="208" FontSize="16"/>
-        <Label Content="hasło:" HorizontalAlignment="Left" Margin="265,479,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
-        <Separator HorizontalAlignment="Left" Height="26" Margin="269,493,0,0" VerticalAlignment="Top" Width="36" Background="#FF9ABF7F"/>
+        <Label Content="hasło:" HorizontalAlignment="Left" Margin="261,480,0,0" VerticalAlignment="Top" FontSize="14" FontFamily="Rockwell Nova Light"/>
+        <Separator HorizontalAlignment="Left" Height="26" Margin="265,493,0,0" VerticalAlignment="Top" Width="36" Background="#FF9ABF7F"/>
     </Grid>
 </Window>
