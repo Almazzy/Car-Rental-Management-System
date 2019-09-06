@@ -405,34 +405,43 @@ namespace carRental.win_finance
 
         private void Create_Document()
         {
-
-            //create app;
-            Word.Application WordApp = new Word.Application();
-            WordApp.Visible = true;
-            WordApp.WindowState = Word.WdWindowState.wdWindowStateNormal;
-
-
-            //create doc;
-            Word.Document doc = WordApp.Documents.Add();
-
-            //create paragraph;
-            Word.Paragraph para = doc.Paragraphs.Add();
-            para.Range.Text = "----------------------- F A K T U R A nr " + Convert.ToString(lbl_f_no.Content) + " -----------------------  \r\n \r\n";
-            para.Range.Text = "--------------------------------------------------------------------------- \r\n ";
-            para.Range.Text = "Najemca: \r\n ";
-            para.Range.Text = Convert.ToString(lbl_n_name.Content) + " \r\n ";
-            para.Range.Text = Convert.ToString(textblock_n_address.Text) + " \r\n ";
-            para.Range.Text = Convert.ToString(lbl_n_no.Content) + " \r\n ";
-            para.Range.Text = "--------------------------------------------------------------------------- \r\n ";
-            para.Range.Text = "Kwota netto: " + Convert.ToString(lbl_netto.Content) + " \r\n ";
-            para.Range.Text = "Kwota brutto: " + Convert.ToString(lbl_brutto.Content) + " \r\n ";
-            para.Range.Text = "VAT: 23%  \r\n  ";
-
-            doc.SaveAs2("C:\\Users\\kswid\\OneDrive\\Pulpit\\rzeczy\\projekty\\carRental\\carRental\\carRental\\" + lbl_f_no.Content + ".docx");
-            doc.Close();
-            WordApp.Quit();
+            try
+            {
+                //create app;
+                Word.Application WordApp = new Word.Application();
+                WordApp.Visible = true;
+                WordApp.WindowState = Word.WdWindowState.wdWindowStateNormal;
 
 
+                //create doc;
+                Word.Document doc = WordApp.Documents.Add();
+
+                //create paragraph;
+                Word.Paragraph para = doc.Paragraphs.Add();
+                para.Range.Text = "----------------- F A K T U R A nr " + Convert.ToString(lbl_f_no.Content) + " ------------------  \r\n \r\n";
+                para.Range.Text = "--------------------------------------------------------------------------- \r\n ";
+                para.Range.Text = "Najemca: \r\n ";
+                para.Range.Text = Convert.ToString(lbl_n_name.Content) + " \r\n ";
+                para.Range.Text = Convert.ToString(textblock_n_address.Text) + " \r\n ";
+                para.Range.Text = Convert.ToString(lbl_n_no.Content) + " \r\n ";
+                para.Range.Text = "--------------------------------------------------------------------------- \r\n ";
+                para.Range.Text = "Kwota netto: " + Convert.ToString(lbl_netto.Content) + " \r\n ";
+                para.Range.Text = "Kwota brutto: " + Convert.ToString(lbl_brutto.Content) + " \r\n ";
+                para.Range.Text = "VAT: 23%  \r\n  ";
+                
+                string path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                path = path + "\\faktura_"; 
+                
+                doc.SaveAs2(path + lbl_f_no.Content + ".docx");
+
+                MessageBox.Show("Tworzenie dokumentu zakończyło się pomyślnie. Plik znajduje się na pulpicie.", "Komunikat.");
+                doc.Close();
+                WordApp.Quit();
+            }
+            catch
+            {
+                MessageBox.Show("Wystąpił nieoczekiwany błąd, spróbuj ponownie.", "Błąd");
+            }
 
         }
 

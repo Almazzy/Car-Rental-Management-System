@@ -46,8 +46,8 @@
                 <DataGridTextColumn Header="nip" Binding="{Binding nip}" Width="131"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btn_ind" Content="&#xA;&#xA;&#xA;          klienci indywidualni" HorizontalAlignment="Left" Margin="71,228,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_ind_Click" />
-        <Button x:Name="btn_com" Content="&#xA;&#xA;&#xA;          firmy" HorizontalAlignment="Left" Margin="71,336,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_com_Click" />
+        <Button x:Name="btn_ind" Content="&#xA;&#xA;&#xA;          klienci indywidualni" HorizontalAlignment="Left" Margin="71,228,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_ind_Click" ToolTip="klienci indywidualni" />
+        <Button x:Name="btn_com" Content="&#xA;&#xA;&#xA;          firmy" HorizontalAlignment="Left" Margin="71,336,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_com_Click" ToolTip="firmy" />
         <Image x:Name="im2" Source="/carRental;component/pic/wpc.png" HorizontalAlignment="Left" Height="62" Margin="83,361,0,0" VerticalAlignment="Top" Width="62"/>
         <Image x:Name="im1" Source="/carRental;component/pic/1pc.png" HorizontalAlignment="Left" Height="62" Margin="83,248,0,0" VerticalAlignment="Top" Width="62"/>
         <Label x:Name="lbl_ind" Content="" HorizontalAlignment="Left" Margin="261,213,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
@@ -89,13 +89,13 @@
         <Button x:Name="btn_finance" Content="   Faktury" HorizontalAlignment="Left" Margin="962,53,0,0" VerticalAlignment="Top" Width="192" Height="80" HorizontalContentAlignment="Center" Background="#FFBF7F7F" FontSize="18" Foreground="White" FontFamily="Verdana Pro SemiBold" Click="Btn_finance_Click_1" />
         <Image Source="/carRental;component/pic/f1.png" HorizontalAlignment="Left" Height="40" Margin="740,74,0,0" VerticalAlignment="Top" Width="48"/>
         <Image Source="/carRental;component/pic/inv/invib.png" HorizontalAlignment="Left" Height="40" Margin="974,74,0,0" VerticalAlignment="Top" Width="48"/>
-        <Button x:Name="btn_o_user" HorizontalAlignment="Left" Margin="1817,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="zmień status samochodu" Click="Btn_o_user_Click">
+        <Button x:Name="btn_o_user" HorizontalAlignment="Left" Margin="1817,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dodaj nowego klienta" Click="Btn_o_user_Click">
             <Image Source="/carRental;component/pic/add_o_user.png" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="45"/>
         </Button>
-        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
+        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click" ToolTip="odśwież">
             <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
         </Button>
-        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click">
+        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click" ToolTip="wyloguj">
             <Image Source="/carRental;component/pic/logout.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
         </Button>
         <Separator HorizontalAlignment="Left" Height="100" Margin="1760,30,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5">

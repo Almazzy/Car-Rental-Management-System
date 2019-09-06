@@ -8,19 +8,20 @@
         Title=" e-carRent - zaloguj się do swojego konta." MaxHeight="425" MaxWidth="382" Height="425" Width="382" WindowStyle="ToolWindow" Background="#FFE8E8E8"
         ResizeMode="CanResizeWithGrip">
     <Grid>
+        <Rectangle Fill="#FFB4C1C1" HorizontalAlignment="Left" Height="151" Margin="28,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
         <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="374"/>
         <Rectangle Fill="#FF7FBFBC" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="319" Margin="28,22,0,0"/>
         <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="374" Margin="0,273,0,0"/>
-        <Rectangle Fill="#FF7FBFBC" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="319" Margin="28,273,0,0"/>
+        <Rectangle Fill="#FF7FBFBC" Height="100" Stroke="Black" VerticalAlignment="Top" Margin="28,273,27,0"/>
+        <Button x:Name="btn_login" Content="z  a  l  o  g  u  j    s  i  ę" HorizontalAlignment="Left" Margin="28,337,0,0" VerticalAlignment="Top" Width="319" Height="30" FontFamily="Rockwell Nova Light" FontSize="16" Background="#FF7FBFBC" Foreground="#FFFFF4F4" Click="Btn_login_Click"/>
+        <Image Source="/carRental;component/pic/car-rent.png" HorizontalAlignment="Left" Height="82" Margin="146,31,0,0" VerticalAlignment="Top" Width="81"/>
+        <Rectangle Fill="#FFFF2B59" HorizontalAlignment="Left" Height="6" Margin="28,367,0,0" Stroke="Black" VerticalAlignment="Top" Width="159"/>
+        <Rectangle Fill="#FFB33E78" HorizontalAlignment="Left" Height="6" Margin="187,367,0,0" Stroke="Black" VerticalAlignment="Top" Width="160"/>
+        <Button x:Name="btn" Content="?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Height="31" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Click="Btn_Click" Margin="347,161,0,0"/>
         <TextBox x:Name="txt_login" HorizontalAlignment="Left" Height="31" Margin="67,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="241" FontSize="16" FontFamily="Yu Gothic"/>
         <PasswordBox x:Name="txt_password" HorizontalAlignment="Left" Margin="67,222,0,0" VerticalAlignment="Top" Width="241" Height="31" FontFamily="Sitka Display"/>
         <Label Content="l o g i n" HorizontalAlignment="Left" Margin="45,135,0,0" VerticalAlignment="Top"/>
         <Label Content="h a s ł o" HorizontalAlignment="Left" Margin="44,196,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_login" Content="z  a  l  o  g  u  j    s  i  ę" HorizontalAlignment="Left" Margin="28,344,0,0" VerticalAlignment="Top" Width="260" Height="29" FontFamily="Rockwell Nova Light" FontSize="16" Background="#FF7FBFBC" Foreground="#FFFFF4F4" Click="Btn_login_Click"/>
-        <Button x:Name="btn_a" Content="a n u l u j" HorizontalAlignment="Left" Margin="288,344,0,0" VerticalAlignment="Top" Width="59" Height="29" Background="#FFBF7F7F" Foreground="#FFFFF0F0" Click="Btn_a_Click"/>
-        <Image Source="/carRental;component/pic/car-rent.png" HorizontalAlignment="Left" Height="82" Margin="147,24,0,0" VerticalAlignment="Top" Width="81"/>
-        <Rectangle Fill="#FFFF2B59" HorizontalAlignment="Left" Height="6" Margin="28,106,0,0" Stroke="Black" VerticalAlignment="Top" Width="159"/>
-        <Rectangle Fill="#FFB33E78" HorizontalAlignment="Left" Height="6" Margin="187,106,0,0" Stroke="Black" VerticalAlignment="Top" Width="160"/>
-        <Button x:Name="btn" Content="?" HorizontalAlignment="Left" Margin="28,315,0,0" VerticalAlignment="Top" Width="319" Height="29" Background="#FF7FBFBC" BorderBrush="#FF7FBFBC" Foreground="White" Click="Btn_Click"/>
+        <Rectangle Fill="#FFB4C1C1" HorizontalAlignment="Left" Height="151" Margin="346,122,0,0" Stroke="Black" VerticalAlignment="Top" Width="1"/>
     </Grid>
 </Window>

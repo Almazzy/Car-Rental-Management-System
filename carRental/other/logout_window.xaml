@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:carRental.other"
         mc:Ignorable="d"
-        Title=" e-carRent - wyloguj się." MaxHeight="158" MaxWidth="343" Height="158" Width="343" WindowStyle="ToolWindow" Background="#FFE8E8E8"
+        Title=" e-carRent - wyloguj się." MaxHeight="158" MaxWidth="343" Height="178" Width="343" WindowStyle="ToolWindow" Background="#FFE8E8E8"
         ResizeMode="CanResizeWithGrip">
     <Grid>
         <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="128" Stroke="Black" VerticalAlignment="Top" Width="335"/>
         <Label HorizontalContentAlignment="Center" Content="Czy na pewno chcesz się wylogować?" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Width="335" FontSize="18"/>
-        <Button Content="WYLOGUJ" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="310" Height="50" Background="#FF7FBFBC" FontSize="18" FontFamily="Tw Cen MT Condensed Extra Bold" Click="Button_Click"/>
+        <Button Content="WYLOGUJ" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" Width="310" Height="40" Background="#FFBF7F7F" FontSize="18" FontFamily="Tw Cen MT Condensed Extra Bold" Click="Button_Click"/>
     </Grid>
 </Window>

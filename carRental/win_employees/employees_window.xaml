@@ -43,8 +43,8 @@
                 <DataGridTextColumn Header="status" Binding="{Binding status}" Width="181"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btn_all_w" Content="&#xA;&#xA;            wszyscy zatrudnieni &#xA;            pracownicy" HorizontalAlignment="Left" Margin="71,228,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_w_Click" />
-        <Button x:Name="btn_all_nw" Content="&#xA;&#xA;            wszyscy zwolnieni &#xA;            pracownicy" HorizontalAlignment="Left" Margin="71,336,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_nw_Click" />
+        <Button x:Name="btn_all_w" Content="&#xA;&#xA;            wszyscy zatrudnieni &#xA;            pracownicy" HorizontalAlignment="Left" Margin="71,228,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_w_Click" ToolTip="wszyscy zatrudnieni pracownicy" />
+        <Button x:Name="btn_all_nw" Content="&#xA;&#xA;            wszyscy zwolnieni &#xA;            pracownicy" HorizontalAlignment="Left" Margin="71,336,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_nw_Click" ToolTip="wszyscy zwolnieni pracownicy" />
         <Image x:Name="im2" Source="/carRental;component/pic/emp/zss.png" HorizontalAlignment="Left" Height="62" Margin="85,362,0,0" VerticalAlignment="Top" Width="62"/>
         <Image x:Name="im1" Source="/carRental;component/pic/emp/pzss.png" HorizontalAlignment="Left" Height="76" Margin="78,241,0,0" VerticalAlignment="Top" Width="79"/>
         <Label x:Name="lbl_all_w" Content="" HorizontalAlignment="Left" Margin="261,213,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
@@ -85,10 +85,10 @@
         <Button x:Name="btn_o_user" HorizontalAlignment="Left" Margin="1817,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="zmień status samochodu">
             <Image Source="/carRental;component/pic/add_o_user.png" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="45"/>
         </Button>
-        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
+        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click" ToolTip="odśwież">
             <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
         </Button>
-        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click">
+        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click" ToolTip="wyloguj">
             <Image Source="/carRental;component/pic/logout.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
         </Button>
         <Separator HorizontalAlignment="Left" Height="100" Margin="1760,30,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5">
@@ -101,19 +101,19 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <Button x:Name="btn_all_k" Content="&#xA;&#xA;            zatrudnieni kierowcy" HorizontalAlignment="Left" Margin="71,445,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_k_Click" />
+        <Button x:Name="btn_all_k" Content="&#xA;&#xA;            zatrudnieni kierowcy" HorizontalAlignment="Left" Margin="71,445,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_k_Click" ToolTip="zatrudnieni kierowcy" />
         <Image x:Name="im3" Source="/carRental;component/pic/emp/ws.png" HorizontalAlignment="Left" Height="62" Margin="85,470,0,0" VerticalAlignment="Top" Width="62"/>
         <Label x:Name="lbl_all_k" Content="" HorizontalAlignment="Left" Margin="261,433,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
-        <Button x:Name="btn_all_s" Content="&#xA;&#xA;            zatrudnieni specjaliści" HorizontalAlignment="Left" Margin="71,554,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_s_Click" />
+        <Button x:Name="btn_all_s" Content="&#xA;&#xA;            zatrudnieni specjaliści" HorizontalAlignment="Left" Margin="71,554,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_s_Click" ToolTip="zatrudnieni specjaliści" />
         <Image x:Name="im4" Source="/carRental;component/pic/emp/ss.png" HorizontalAlignment="Left" Height="62" Margin="83,579,0,0" VerticalAlignment="Top" Width="62"/>
         <Label x:Name="lbl_all_s" Content="" HorizontalAlignment="Left" Margin="261,542,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
-        <Button x:Name="btn_all_h" Content="&#xA;&#xA;            zatrudnieni handlowcy" HorizontalAlignment="Left" Margin="71,662,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_h_Click" />
+        <Button x:Name="btn_all_h" Content="&#xA;&#xA;            zatrudnieni handlowcy" HorizontalAlignment="Left" Margin="71,662,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_all_h_Click" ToolTip="zatrudnieni handlowcy" />
         <Image x:Name="im5" Source="/carRental;component/pic/emp/hs.png" HorizontalAlignment="Left" Height="62" Margin="83,692,0,0" VerticalAlignment="Top" Width="55"/>
         <Label x:Name="lbl_all_h" Content="" HorizontalAlignment="Left" Margin="261,650,0,0" VerticalAlignment="Top" Width="89" Foreground="#FF707070" FontSize="50" FontFamily="Yu Gothic Light" Height="68" HorizontalContentAlignment="Right"/>
-        <Button x:Name="btn_del_e" HorizontalAlignment="Left" Margin="1817,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="dezaktywuj samochód" Click="Btn_del_e_Click">
+        <Button x:Name="btn_del_e" HorizontalAlignment="Left" Margin="1817,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="#FF454553" BorderBrush="#FF454553" ToolTip="zwolnij pracownika" Click="Btn_del_e_Click">
             <Image Source="/carRental;component/pic/emp/delp.png" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="45"/>
         </Button>
-        <Button x:Name="btn_add_e" HorizontalAlignment="Left" Margin="1722,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="{x:Null}" BorderBrush="#FF454553" ToolTip="dezaktywuj samochód" Click="Btn_add_e_Click">
+        <Button x:Name="btn_add_e" HorizontalAlignment="Left" Margin="1722,923,0,0" VerticalAlignment="Top" Width="90" Height="90" Background="{x:Null}" BorderBrush="#FF454553" ToolTip="dodaj pracownika" Click="Btn_add_e_Click">
             <Image Source="/carRental;component/pic/emp/addp.png" HorizontalAlignment="Left" Height="45" VerticalAlignment="Top" Width="45"/>
         </Button>
     </Grid>

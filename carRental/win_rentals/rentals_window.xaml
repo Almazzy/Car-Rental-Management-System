@@ -59,9 +59,9 @@
                 <DataGridTextColumn Header="stawka dobowa" Binding="{Binding kwota_dobowa}" Width="131"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="btn_ongoing" Content="&#xA;&#xA;&#xA;          trwające wynajmy" HorizontalAlignment="Left" Margin="71,228,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_ongoing_Click" />
-        <Button x:Name="btn_completed" Content="              &#xA;            &#xA;&#xA;          zakończone wynajmy" HorizontalAlignment="Left" Margin="71,336,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_completed_Click"/>
-        <Button x:Name="btn_reservations" Content="&#xA;&#xA;&#xA;         rezerwacje" HorizontalAlignment="Left" Margin="71,444,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_reservations_Click"/>
+        <Button x:Name="btn_ongoing" Content="&#xA;&#xA;&#xA;          trwające wynajmy" HorizontalAlignment="Left" Margin="71,228,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_ongoing_Click" ToolTip="trwające wynajmy" />
+        <Button x:Name="btn_completed" Content="              &#xA;            &#xA;&#xA;          zakończone wynajmy" HorizontalAlignment="Left" Margin="71,336,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_completed_Click" ToolTip="zakończone wynajmy"/>
+        <Button x:Name="btn_reservations" Content="&#xA;&#xA;&#xA;         rezerwacje" HorizontalAlignment="Left" Margin="71,444,0,0" VerticalAlignment="Top" Width="279" Height="103" Background="#FFE8E8E8" FontSize="16" FontFamily="Verdana Pro SemiBold" Foreground="#FF707070" Click="Btn_reservations_Click" ToolTip="rezerwacje"/>
         <Image x:Name="im1" Source="/carRental;component/pic/cal1.png" HorizontalAlignment="Left" Height="62" Margin="81,246,0,0" VerticalAlignment="Top" Width="62"/>
         <Image x:Name="im2" Source="/carRental;component/pic/cal3.png" HorizontalAlignment="Left" Height="62" Margin="81,355,0,0" VerticalAlignment="Top" Width="62"/>
         <Image x:Name="im3" Source="/carRental;component/pic/cal2.png" HorizontalAlignment="Left" Height="62" Margin="81,464,0,0" VerticalAlignment="Top" Width="62"/>
@@ -108,10 +108,10 @@
                 </TransformGroup>
             </Separator.RenderTransform>
         </Separator>
-        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click">
+        <Button x:Name="btn_reload" HorizontalAlignment="Left" Margin="1850,59,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_reload_Click" ToolTip="odśwież">
             <Image Source="/carRental;component/pic/reload1.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
         </Button>
-        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click">
+        <Button x:Name="btn_logout" HorizontalAlignment="Left" Margin="1850,4,0,0" VerticalAlignment="Top" Width="50" BorderBrush="{x:Null}" Height="50" Background="{x:Null}" Click="Btn_logout_Click" ToolTip="wyloguj">
             <Image Source="/carRental;component/pic/logout.png" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="35"/>
         </Button>
         <Separator HorizontalAlignment="Left" Height="100" Margin="1760,30,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.5,0.5">

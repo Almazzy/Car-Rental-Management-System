@@ -315,9 +315,7 @@
     <Resource Include="pic\f7.png" />
     <Resource Include="pic\f8.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="dashboard_window\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="pic\1pb.png" />
     <Resource Include="pic\1pc.png" />
