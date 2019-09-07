@@ -13,7 +13,7 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![screen](./img/okno_samochody.png)
 
 ## Features
 List of features ready:
