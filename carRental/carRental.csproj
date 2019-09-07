@@ -375,9 +375,6 @@
     <Resource Include="pic\unps.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="pic\road.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="pic\changeb.png" />
     <Resource Include="pic\offb.png" />
   </ItemGroup>
@@ -387,9 +384,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="pic\add_o_user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="pic\car_login.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="pic\car-rent.png" />
