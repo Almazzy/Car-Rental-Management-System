@@ -12,7 +12,10 @@
 ## General info 
 An application enabling better work organising in the car rental. Add a car, client or a new order. Check when the policy, or the car review ends. Generate and download an invoice. CRMS allows you to do this and much more!
 ## Screenshots
-![screenshot](./img/screenshot.png)
+![screenshot1](./img/okno_wynajmy.png)
+![screenshot2](./img/okno_samochody.png)
+![screenshot3](./img/okno_faktury.png)
+![screenshot4](./img/okno_polisy.png)
 
 ## Features
 List of features:
@@ -31,4 +34,4 @@ My motivation for this application was a desire to enchance my current knowledge
 My inspiration was my current job. Working in a car rental, I knew what could be expected from such application and how should it be done.
 
 ## Contact
-Created by [@karolswiderski](https://github.com/karolswiderski/).
+Created by [@karolswiderski](https://github.com/karolswiderski/) kswiderski98@gmail.com
