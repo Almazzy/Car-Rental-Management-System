@@ -12,7 +12,7 @@
         <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="374"/>
         <Rectangle Fill="#FF7FBFBC" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="319" Margin="28,22,0,0"/>
         <Rectangle Fill="#FFD8D8D8" HorizontalAlignment="Left" Height="122" Stroke="Black" VerticalAlignment="Top" Width="374" Margin="0,273,0,0"/>
-        <Rectangle Fill="#FF7FBFBC" Height="100" Stroke="Black" VerticalAlignment="Top" Margin="28,273,27,0"/>
+        <Rectangle Fill="#FF7FBFBC" HorizontalAlignment="Left" Height="100" Stroke="Black" VerticalAlignment="Top" Width="319" Margin="29,273,0,0"/>
         <Button x:Name="btn_login" Content="z  a  l  o  g  u  j    s  i  ę" HorizontalAlignment="Left" Margin="28,337,0,0" VerticalAlignment="Top" Width="319" Height="30" FontFamily="Rockwell Nova Light" FontSize="16" Background="#FF7FBFBC" Foreground="#FFFFF4F4" Click="Btn_login_Click"/>
         <Image Source="/carRental;component/pic/car-rent.png" HorizontalAlignment="Left" Height="82" Margin="146,31,0,0" VerticalAlignment="Top" Width="81"/>
         <Rectangle Fill="#FFFF2B59" HorizontalAlignment="Left" Height="6" Margin="28,367,0,0" Stroke="Black" VerticalAlignment="Top" Width="159"/>

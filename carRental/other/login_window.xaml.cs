@@ -42,7 +42,7 @@ namespace carRental.other
 
             if (count == 1)
             {
-                Get_Emp();
+               
                 win_rentals.rentals_window rw = new win_rentals.rentals_window();
 
                 this.Close();
@@ -68,14 +68,5 @@ namespace carRental.other
             rw.ShowDialog();
         }
 
-        private void Get_Emp()
-        {
-            connection.openConnection();
-            connection.sql = "SELECT Id_Pracownika FROM Pracownicy p, UserTb t WHERE p.Id_User = t.Id_User AND t.login = '" + txt_login.Text + "' + AND t.password = '" + txt_password.Password + "'";
-            connection.cmd.CommandType = CommandType.Text;
-            connection.cmd.CommandText = connection.sql;
-            box = (int)connection.cmd.ExecuteScalar();
-            connection.closeConnection();
-        }
     }
 }

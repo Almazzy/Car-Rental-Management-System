@@ -209,4 +209,3 @@ C:\Users\kswid\OneDrive\Pulpit\rzeczy\projekty\car_rental\carRental\carRental\ob
 C:\Users\kswid\OneDrive\Pulpit\rzeczy\projekty\car_rental\carRental\carRental\obj\Debug\carRental.csproj.CopyComplete
 C:\Users\kswid\OneDrive\Pulpit\rzeczy\projekty\car_rental\carRental\carRental\obj\Debug\carRental.exe
 C:\Users\kswid\OneDrive\Pulpit\rzeczy\projekty\car_rental\carRental\carRental\obj\Debug\carRental.pdb
-C:\Users\kswid\OneDrive\Pulpit\rzeczy\projekty\car_rental\carRental\carRental\bin\Debug\Microsoft.SqlServer.ConnectionDlg.VS.Azure.dll
