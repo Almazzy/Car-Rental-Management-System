@@ -1,4 +1,4 @@
-# Car Rental Menagment System
+# Car Rental Management System
 > An application that makes everyday work easier for car rental workers.
 
 ## Table of contents
