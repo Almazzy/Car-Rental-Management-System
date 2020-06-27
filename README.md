@@ -34,4 +34,4 @@ My motivation for this application was a desire to enchance my current knowledge
 My inspiration was my current job. Working in a car rental, I knew what could be expected from such application and how should it be done.
 
 ## Contact
-Created by [@karolswiderski](https://github.com/karolswiderski/) | kswiderski98@gmail.com
+Created by [@karolswiderski](https://www.linkedin.com/in/karolswiderski/) | kswiderski98@gmail.com
